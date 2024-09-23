@@ -29,9 +29,11 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git checkout -b automated-update-$(date +%Y%m%d%H%M%S)
+        branch_name="automated-update-$(date +%Y%m%d%H%M%S)"
+        git checkout -b $branch_name
         git add .
         git commit -m 'Automated update of files'
+        git push origin $branch_name
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
@@ -40,7 +42,7 @@ jobs:
         commit-message: Automated update of files
         title: 'Automated update of files'
         body: 'This is an automated PR to update files'
-        branch: automated-update-$(date +%Y%m%d%H%M%S)
+        branch: ${{ steps.create_branch.outputs.branch_name }}
         base: main
 
     - name: Merge Pull Request
