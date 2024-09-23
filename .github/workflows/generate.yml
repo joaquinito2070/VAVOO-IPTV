@@ -25,31 +25,13 @@ jobs:
     - name: Run main.go
       run: go run scripts/main.go
 
-    - name: Create new branch
+    - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        branch_name="automated-update-$(date +%Y%m%d%H%M%S)"
-        git checkout -b "$branch_name"
         git add .
         git commit -m 'Automated update of files'
-        git push origin "$branch_name"
-
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: Automated update of files
-        title: 'Automated update of files'
-        body: 'This is an automated PR to update files'
-        branch: ${{ steps.create_branch.outputs.branch_name }}
-        base: main
-
-    - name: Merge Pull Request
-      uses: peter-evans/enable-pull-request-automerge@v1
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        merge-method: squash
+        git push origin main
 
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
