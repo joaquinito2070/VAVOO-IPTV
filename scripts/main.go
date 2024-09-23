@@ -9,8 +9,6 @@ import (
 	"path/filepath"
 	"strings"
 	"sync"
-
-	"github.com/schollz/progressbar/v3"
 )
 
 type Channel struct {
@@ -58,9 +56,6 @@ func main() {
 	// Create a channel to limit concurrency
 	semaphore := make(chan struct{}, 512)
 
-	// Create progress bar
-	bar := progressbar.Default(int64(len(groupChannels) + 1))
-
 	// Generate M3U files for each group
 	for group, channels := range groupChannels {
 		wg.Add(1)
@@ -69,7 +64,6 @@ func main() {
 			defer wg.Done()
 			defer func() { <-semaphore }()
 			generateM3U(fmt.Sprintf("index_%s.m3u", group), channels)
-			bar.Add(1)
 		}(group, channels)
 	}
 
@@ -80,7 +74,6 @@ func main() {
 		defer wg.Done()
 		defer func() { <-semaphore }()
 		generateM3U("index.m3u", allChannels)
-		bar.Add(1)
 	}()
 
 	// Wait for all goroutines to finish
