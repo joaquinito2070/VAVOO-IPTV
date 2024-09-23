@@ -6,119 +6,134 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
-	"path/filepath"
 	"strings"
-	"sync"
 )
 
-type Channel struct {
+// Item represents a single channel item
+type Item struct {
 	Group string `json:"group"`
-	Logo  string `json:"logo"`
 	Name  string `json:"name"`
+	Logo  string `json:"logo"`
 	TvgID string `json:"tvg_id"`
 	URL   string `json:"url"`
 }
 
-func main() {
-	// Fetch JSON data
+// generateM3U generates M3U content for a single item
+func generateM3U(group, name, logo, tvgID, url string) string {
+	// Replace .ts with /index.m3u8 and /live2/play with /play
+	url = strings.Replace(url, ".ts", "/index.m3u8", -1)
+	url = strings.Replace(url, "/live2/play", "/play", -1)
+
+	// Additional check to ensure no .ts links remain and correct URL format
+	if strings.Contains(url, ".ts") {
+		url = strings.Replace(url, ".ts", "/index.m3u8", -1)
+	}
+	if !strings.HasSuffix(url, "/index.m3u8") {
+		url = url + "/index.m3u8"
+	}
+
+	return fmt.Sprintf("#EXTINF:-1 tvg-id=\"%s\" tvg-name=\"%s\" tvg-logo=\"%s\" group-title=\"%s\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://vavoo.to/\",%s\n"+
+		"#EXTVLCOPT:http-user-agent=VAVOO/1.0\n"+
+		"#EXTVLCOPT:http-referrer=https://vavoo.to/\n"+
+		"#KODIPROP:http-user-agent=VAVOO/1.0\n"+
+		"#KODIPROP:http-referrer=https://vavoo.to/\n"+
+		"#EXTHTTP:{\"User-Agent\":\"VAVOO/1.0\",\"Referer\":\"https://vavoo.to/\"}\n"+
+		"%s", tvgID, name, logo, group, name, url)
+}
+
+// fetchJSONData fetches JSON data from the specified URL
+func fetchJSONData() ([]byte, error) {
 	resp, err := http.Get("https://www2.vavoo.to/live2/index?countries=all&output=json")
 	if err != nil {
-		fmt.Println("Error fetching data:", err)
-		return
+		return nil, err
 	}
 	defer resp.Body.Close()
-
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Println("Error reading response:", err)
-		return
-	}
-
-	var channels []Channel
-	err = json.Unmarshal(body, &channels)
-	if err != nil {
-		fmt.Println("Error parsing JSON:", err)
-		return
-	}
-
-	// Create maps to store group-specific and all channels
-	groupChannels := make(map[string][]Channel)
-	allChannels := make([]Channel, 0)
-
-	for _, channel := range channels {
-		groupChannels[channel.Group] = append(groupChannels[channel.Group], channel)
-		allChannels = append(allChannels, channel)
-	}
-
-	// Create a wait group to synchronize goroutines
-	var wg sync.WaitGroup
-
-	// Create a channel to limit concurrency
-	semaphore := make(chan struct{}, 512)
-
-	// Generate M3U files for each group
-	for group, channels := range groupChannels {
-		wg.Add(1)
-		semaphore <- struct{}{}
-		go func(group string, channels []Channel) {
-			defer wg.Done()
-			defer func() { <-semaphore }()
-			generateM3U(fmt.Sprintf("index_%s.m3u", group), channels)
-		}(group, channels)
-	}
-
-	// Generate M3U file for all channels
-	wg.Add(1)
-	semaphore <- struct{}{}
-	go func() {
-		defer wg.Done()
-		defer func() { <-semaphore }()
-		generateM3U("index.m3u", allChannels)
-	}()
-
-	// Wait for all goroutines to finish
-	wg.Wait()
-
-	// Generate HTML file
-	generateHTML()
-
-	fmt.Println("M3U and HTML files generated successfully.")
+	return ioutil.ReadAll(resp.Body)
 }
 
-func generateM3U(filename string, channels []Channel) {
-	file, err := os.Create(filename)
-	if err != nil {
-		fmt.Printf("Error creating file %s: %v\n", filename, err)
-		return
-	}
-	defer file.Close()
-
-	file.WriteString("#EXTM3U\n")
-
-	for _, channel := range channels {
-		url := strings.Replace(channel.URL, "/live2/play", "/play", 1)
-		url = strings.Replace(url, ".ts", "/index.m3u8", 1)
-
-		file.WriteString(fmt.Sprintf("#EXTINF:-1 tvg-id=\"%s\" tvg-logo=\"%s\" group-title=\"%s\",Referer=\"https://vavoo.tv\" User-Agent=\"VAVOO/1.0\",%s\n", channel.TvgID, channel.Logo, channel.Group, channel.Name))
-		file.WriteString(fmt.Sprintf("%s\n", url))
-	}
+// processItem processes a single item and returns M3U content and group
+func processItem(item Item) (string, string, error) {
+	m3uContent := generateM3U(item.Group, item.Name, item.Logo, item.TvgID, item.URL)
+	return m3uContent, item.Group, nil
 }
 
-func generateHTML() {
-	files, err := filepath.Glob("index*.m3u")
+func main() {
+	jsonData, err := fetchJSONData()
 	if err != nil {
-		fmt.Println("Error finding M3U files:", err)
+		fmt.Printf("Error fetching JSON data: %v\n", err)
 		return
 	}
 
-	htmlContent := "<html><body><h1>M3U Playlists</h1><ul>"
-	for _, file := range files {
-		htmlContent += fmt.Sprintf("<li><a href='%s'>%s</a></li>", file, file)
-	}
-	htmlContent += "</ul></body></html>"
-
-	err = ioutil.WriteFile("index.html", []byte(htmlContent), 0644)
+	var items []Item
+	err = json.Unmarshal(jsonData, &items)
 	if err != nil {
-		fmt.Println("Error writing HTML file:", err)
+		fmt.Printf("Error unmarshaling JSON: %v\n", err)
+		return
 	}
+
+	indexM3U, err := os.Create("index.m3u")
+	if err != nil {
+		fmt.Printf("Error creating index.m3u: %v\n", err)
+		return
+	}
+	defer indexM3U.Close()
+
+	indexM3U.WriteString("#EXTM3U\n")
+
+	groups := make(map[string]bool)
+	processedCount := 0
+
+	for _, item := range items {
+		m3uContent, group, err := processItem(item)
+		if err != nil {
+			fmt.Printf("Error processing item: %v\n", err)
+			continue
+		}
+
+		groups[group] = true
+
+		indexM3U.WriteString(m3uContent + "\n")
+
+		groupFile, err := os.OpenFile("index_"+group+".m3u", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+		if err != nil {
+			fmt.Printf("Error opening group file: %v\n", err)
+			continue
+		}
+		groupFile.WriteString(m3uContent + "\n")
+		groupFile.Close()
+
+		processedCount++
+		fmt.Printf("Processed %d/%d channels\n", processedCount, len(items))
+	}
+
+	// Generate HTML
+	html := `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3U Playlists</title>
+</head>
+<body>
+    <h1>M3U Playlists</h1>
+    <h2><a href="index.m3u">Complete Playlist</a></h2>
+    <h2>Group-specific Playlists:</h2>
+    <ul>
+`
+
+	for group := range groups {
+		html += fmt.Sprintf("        <li><a href=\"index_%s.m3u\">%s</a></li>\n", group, group)
+	}
+
+	html += `    </ul>
+</body>
+</html>`
+
+	err = ioutil.WriteFile("index.html", []byte(html), 0644)
+	if err != nil {
+		fmt.Printf("Error writing index.html: %v\n", err)
+		return
+	}
+
+	fmt.Println("M3U files and HTML index generated successfully.")
 }
