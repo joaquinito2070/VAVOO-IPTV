@@ -36,7 +36,8 @@ function fetchJSONData() {
 function processItem(item) {
     try {
         const { group = '', name = '', logo = '', tvg_id = '', url = '' } = JSON.parse(item);
-        const m3uContent = generateM3U(group, name, logo, tvg_id, url);
+        let modifiedUrl = url.replace(/\.ts/g, '/index.m3u8').replace(/\/live2\/play/g, '/play');
+        const m3uContent = generateM3U(group, name, logo, tvg_id, modifiedUrl);
         return { m3uContent, group };
     } catch (error) {
         console.error('Invalid JSON:', item);
