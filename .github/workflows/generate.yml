@@ -25,6 +25,9 @@ jobs:
     - name: Run generate.js
       run: node scripts/generate.js
 
+    - name: Remove untracked files
+      run: git clean -f
+
     - name: Commit and push changes to main-m3u
       run: |
         git config --global user.name 'github-actions[bot]'
