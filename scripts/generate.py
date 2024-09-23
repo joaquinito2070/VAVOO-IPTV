@@ -31,7 +31,8 @@ def process_item(item):
         logo = item.get('logo', '')
         tvg_id = item.get('tvg_id', '')
         url = item.get('url', '')
-        modified_url = url.replace('.ts', '/index.m3u8').replace('/live2/play', '/play')
+        # Modify URL to replace /live2/play/ with /play/ and .ts with /index.m3u8
+        modified_url = url.replace('https://vavoo.to/live2/play/', 'https://vavoo.to/play/').replace('.ts', '/index.m3u8')
         m3u_content = generate_m3u(group, name, logo, tvg_id, modified_url)
         return m3u_content, group
     except Exception as e:
