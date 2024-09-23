@@ -28,15 +28,14 @@ jobs:
     - name: Remove untracked files
       run: git clean -f
 
-    - name: Commit and push changes to main-m3u
+    - name: Commit and push changes to main
+      if: github.event_name != 'push'
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git fetch origin main-m3u || git branch main-m3u
-        git checkout main-m3u
         git add *.m3u index.html  # Only add M3U files and index.html
         git diff --staged --quiet || git commit -m 'Automated update of M3U files'
-        git push origin main-m3u
+        git push origin main
 
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
