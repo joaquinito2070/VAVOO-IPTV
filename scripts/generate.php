@@ -2,9 +2,8 @@
 
 // Function to generate M3U content
 function generate_m3u($group, $name, $logo, $tvg_id, $url) {
-    // Modify URL to replace /live2/play/ with /play/ and .ts with /index.m3u8
-    $url = str_replace('https://vavoo.to/live2/play/', 'https://vavoo.to/play/', $url);
-    $url = str_replace('.ts', '/index.m3u8', $url);
+    // Force replace https://vavoo.to/live2/play/*.ts with https://vavoo.to/play/*/index.m3u8
+    $url = preg_replace('#https://vavoo\.to/live2/play/(\d+)\.ts#', 'https://vavoo.to/play/$1/index.m3u8', $url);
 
     return "#EXTINF:-1 tvg-id=\"$tvg_id\" tvg-name=\"$name\" tvg-logo=\"$logo\" group-title=\"$group\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://vavoo.to/\",$name
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
@@ -29,9 +28,8 @@ function process_item($item) {
         $logo = $item['logo'] ?? '';
         $tvg_id = $item['tvg_id'] ?? '';
         $url = $item['url'] ?? '';
-        // Modify URL to replace /live2/play/ with /play/ and .ts with /index.m3u8
-        $modified_url = str_replace('https://vavoo.to/live2/play/', 'https://vavoo.to/play/', $url);
-        $modified_url = str_replace('.ts', '/index.m3u8', $modified_url);
+        // Force replace https://vavoo.to/live2/play/*.ts with https://vavoo.to/play/*/index.m3u8
+        $modified_url = preg_replace('#https://vavoo\.to/live2/play/(\d+)\.ts#', 'https://vavoo.to/play/$1/index.m3u8', $url);
         $m3u_content = generate_m3u($group, $name, $logo, $tvg_id, $modified_url);
         return [$m3u_content, $group];
     } catch (Exception $e) {
