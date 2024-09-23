@@ -24,6 +24,11 @@ func generateM3U(group, name, logo, tvgID, url string) string {
 	url = strings.Replace(url, ".ts", "/index.m3u8", -1)
 	url = strings.Replace(url, "/live2/play", "/play", -1)
 
+	// Additional check to ensure no .ts links remain
+	if strings.Contains(url, ".ts") {
+		url = strings.Replace(url, ".ts", "/index.m3u8", -1)
+	}
+
 	return fmt.Sprintf("#EXTINF:-1 tvg-id=\"%s\" tvg-name=\"%s\" tvg-logo=\"%s\" group-title=\"%s\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://vavoo.to/\",%s\n"+
 		"#EXTVLCOPT:http-user-agent=VAVOO/1.0\n"+
 		"#EXTVLCOPT:http-referrer=https://vavoo.to/\n"+
