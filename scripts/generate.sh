@@ -24,24 +24,20 @@ json_data=$(curl -s "https://www2.vavoo.to/live2/index?countries=all&output=json
 echo "#EXTM3U" > index.m3u
 echo "" > groups.txt
 
-echo "$json_data" | jq -c '.[]' | parallel -j 1024 '
+echo "$json_data" | jq -c '.[]' | parallel --progress --bar -j 2048 '
     group=$(echo {} | jq -r .group)
     name=$(echo {} | jq -r .name)
     logo=$(echo {} | jq -r .logo)
     tvg_id=$(echo {} | jq -r .tvg_id)
     url=$(echo {} | jq -r .url)
 
-    m3u_content=$(echo "#EXTINF:-1 tvg-id=\"$tvg_id\" tvg-name=\"$name\" tvg-logo=\"$logo\" group-title=\"$group\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://www.vavoo.to/\",$name"; \
-                  echo "#EXTVLCOPT:http-user-agent=VAVOO/1.0"; \
-                  echo "#EXTVLCOPT:http-referrer=https://www.vavoo.to/"; \
-                  echo "#KODIPROP:http-user-agent=VAVOO/1.0"; \
-                  echo "#KODIPROP:http-referrer=https://www.vavoo.to/"; \
-                  echo "#EXTHTTP:{\"User-Agent\":\"VAVOO/1.0\",\"Referer\":\"https://www.vavoo.to/\"}"; \
-                  echo "$url")
+    m3u_content=$(printf "#EXTINF:-1 tvg-id=\"%s\" tvg-name=\"%s\" tvg-logo=\"%s\" group-title=\"%s\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://www.vavoo.to/\",%s\n#EXTVLCOPT:http-user-agent=VAVOO/1.0\n#EXTVLCOPT:http-referrer=https://www.vavoo.to/\n#KODIPROP:http-user-agent=VAVOO/1.0\n#KODIPROP:http-referrer=https://www.vavoo.to/\n#EXTHTTP:{\"User-Agent\":\"VAVOO/1.0\",\"Referer\":\"https://www.vavoo.to/\"}\n%s" "$tvg_id" "$name" "$logo" "$group" "$name" "$url")
     
     echo "$m3u_content" >> index.m3u
     echo "$m3u_content" >> "index_${group}.m3u"
     echo "$group" >> groups.txt
+    
+    echo "Procesando canal: $name" >&2
 '
 
 # Remove duplicate groups
