@@ -24,13 +24,17 @@ json_data=$(curl -s "https://www2.vavoo.to/live2/index?countries=all&output=json
 echo "#EXTM3U" > index.m3u
 echo "" > groups.txt
 
-echo "${json_data}" | jq -c '.[]' | xargs -P 4096 -I {} bash -c '
+echo "${json_data}" | jq -c '.[]' | xargs -P 8192 -I {} bash -c '
     item="$1"
-    group=$(echo "${item}" | jq -r ".group // empty")
-    name=$(echo "${item}" | jq -r ".name // empty")
-    logo=$(echo "${item}" | jq -r ".logo // empty")
-    tvg_id=$(echo "${item}" | jq -r ".tvg_id // empty")
-    url=$(echo "${item}" | jq -r ".url // empty")
+    if ! jq -e . >/dev/null 2>&1 <<< "$item"; then
+        echo "Invalid JSON: $item" >&2
+        exit 1
+    fi
+    group=$(jq -r ".group // empty" <<< "$item")
+    name=$(jq -r ".name // empty" <<< "$item")
+    logo=$(jq -r ".logo // empty" <<< "$item")
+    tvg_id=$(jq -r ".tvg_id // empty" <<< "$item")
+    url=$(jq -r ".url // empty" <<< "$item")
 
     m3u_content=$(printf "#EXTINF:-1 tvg-id=\"%s\" tvg-name=\"%s\" tvg-logo=\"%s\" group-title=\"%s\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://www.vavoo.to/\",%s\n#EXTVLCOPT:http-user-agent=VAVOO/1.0\n#EXTVLCOPT:http-referrer=https://www.vavoo.to/\n#KODIPROP:http-user-agent=VAVOO/1.0\n#KODIPROP:http-referrer=https://www.vavoo.to/\n#EXTHTTP:{\"User-Agent\":\"VAVOO/1.0\",\"Referer\":\"https://www.vavoo.to/\"}\n%s" "${tvg_id}" "${name}" "${logo}" "${group}" "${name}" "${url}")
     
