@@ -34,9 +34,9 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git fetch origin main-m3u || git branch main-m3u
         git checkout main-m3u
-        git add .
+        git add *.m3u index.html  # Only add M3U files and index.html
         git commit -m 'Automated update of M3U files' || echo "No changes to commit"
-        git push origin main-m3u --force
+        git push origin main-m3u
 
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
