@@ -17,15 +17,20 @@ echo "$json_data" | jq -c '.[]' | while read -r item; do
     logo=$(echo "$item" | jq -r '.logo')
     tvg_id=$(echo "$item" | jq -r '.tvg_id')
 
+    # Display each channel obtained
+    echo "Processing channel: $name"
+
     # Create or append to the group-specific M3U file
     if [ ! -f "index_${group}.m3u" ]; then
         echo "#EXTM3U" > "index_${group}.m3u"
     fi
     echo "#EXTINF:-1 tvg-id=\"$tvg_id\" tvg-logo=\"$logo\" group-title=\"$group\", $name" >> "index_${group}.m3u"
+    echo "#EXTVLCOPT:http-user-agent=VAVOO/1.0" >> "index_${group}.m3u"
     echo "$url" >> "index_${group}.m3u"
 
     # Append to the main index.m3u file
     echo "#EXTINF:-1 tvg-id=\"$tvg_id\" tvg-logo=\"$logo\" group-title=\"$group\", $name" >> index.m3u
+    echo "#EXTVLCOPT:http-user-agent=VAVOO/1.0" >> index.m3u
     echo "$url" >> index.m3u
 
     # Track the group
