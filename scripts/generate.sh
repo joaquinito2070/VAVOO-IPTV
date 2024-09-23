@@ -31,13 +31,13 @@ echo "$json_data" | jq -c '.[]' | xargs -P 4096 -I {} bash -c '
     tvg_id=$(echo {} | jq -r .tvg_id)
     url=$(echo {} | jq -r .url)
 
-    m3u_content=$(printf "#EXTINF:-1 tvg-id=\"%s\" tvg-name=\"%s\" tvg-logo=\"%s\" group-title=\"%s\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://www.vavoo.to/\",%s\n#EXTVLCOPT:http-user-agent=VAVOO/1.0\n#EXTVLCOPT:http-referrer=https://www.vavoo.to/\n#KODIPROP:http-user-agent=VAVOO/1.0\n#KODIPROP:http-referrer=https://www.vavoo.to/\n#EXTHTTP:{\"User-Agent\":\"VAVOO/1.0\",\"Referer\":\"https://www.vavoo.to/\"}\n%s" "$tvg_id" "$name" "$logo" "$group" "$name" "$url")
+    m3u_content=$(printf "#EXTINF:-1 tvg-id=\"%s\" tvg-name=\"%s\" tvg-logo=\"%s\" group-title=\"%s\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://www.vavoo.to/\",%s\n#EXTVLCOPT:http-user-agent=VAVOO/1.0\n#EXTVLCOPT:http-referrer=https://www.vavoo.to/\n#KODIPROP:http-user-agent=VAVOO/1.0\n#KODIPROP:http-referrer=https://www.vavoo.to/\n#EXTHTTP:{\"User-Agent\":\"VAVOO/1.0\",\"Referer\":\"https://www.vavoo.to/\"}\n%s" "${tvg_id}" "${name}" "${logo}" "${group}" "${name}" "${url}")
     
-    echo "$m3u_content" >> index.m3u
-    echo "$m3u_content" >> "index_${group}.m3u"
-    echo "$group" >> groups.txt
+    echo "${m3u_content}" >> index.m3u
+    echo "${m3u_content}" >> "index_${group}.m3u"
+    echo "${group}" >> groups.txt
     
-    echo "Procesando canal: $name" >&2
+    echo "Procesando canal: ${name}" >&2
 '
 
 # Remove duplicate groups
