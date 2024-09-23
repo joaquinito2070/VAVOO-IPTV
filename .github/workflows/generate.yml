@@ -25,9 +25,6 @@ jobs:
     - name: Run main.go
       run: go run scripts/main.go
 
-    - name: Remove untracked files
-      run: git clean -f
-
     - name: Create new branch
       run: |
         git config --global user.name 'github-actions[bot]'
