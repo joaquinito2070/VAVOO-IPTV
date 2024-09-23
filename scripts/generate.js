@@ -8,11 +8,9 @@ const appendFileAsync = promisify(fs.appendFile);
 
 // Function to generate M3U content
 function generateM3U(group, name, logo, tvgId, url) {
-    // Modify URL if it contains .ts or live2/play/
-    if (url.includes('.ts') || url.includes('live2/play/')) {
-        url = url.replace('https://vavoo.to/live2/play/', 'https://vavoo.to/play/');
-        url = url.replace('.ts', '/index.m3u8');
-    }
+    // Modify URL to replace /live2/play/ with /play/ and .ts with /index.m3u8
+    url = url.replace(/https:\/\/vavoo\.to\/live2\/play\//g, 'https://vavoo.to/play/');
+    url = url.replace(/\.ts$/g, '/index.m3u8');
 
     return `#EXTINF:-1 tvg-id="${tvgId}" tvg-name="${name}" tvg-logo="${logo}" group-title="${group}" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",${name}
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
