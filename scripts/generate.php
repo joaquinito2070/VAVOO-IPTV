@@ -55,10 +55,8 @@ function main() {
                 $groups[$group] = true;
                 // Additional URL replacement to ensure all instances are changed
                 $m3u_content = preg_replace('#https://vavoo\.to/live2/play/(\d+)\.ts#', 'https://vavoo.to/play/$1/index.m3u8', $m3u_content);
-                // Double-check replacement
-                if (strpos($m3u_content, 'https://vavoo.to/live2/play/') !== false) {
-                    $m3u_content = preg_replace('#https://vavoo\.to/live2/play/(\d+)\.ts#', 'https://vavoo.to/play/$1/index.m3u8', $m3u_content);
-                }
+                // Double-check replacement and apply it to any remaining instances
+                $m3u_content = preg_replace('#https://vavoo\.to/live2/play/(\d+)(?:\.ts)?#', 'https://vavoo.to/play/$1/index.m3u8', $m3u_content);
                 file_put_contents('index.m3u', $m3u_content . "\n", FILE_APPEND);
                 file_put_contents("index_{$group}.m3u", $m3u_content . "\n", FILE_APPEND);
                 $processed_count++;
