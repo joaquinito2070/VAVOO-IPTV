@@ -10,8 +10,7 @@ const appendFileAsync = promisify(fs.appendFile);
 function generateM3U(group, name, logo, tvgId, url) {
     // Modify URL if it contains .ts
     if (url.includes('.ts')) {
-        url = url.replace('https://vavoo.to/live2/', 'https://vavoo.to/');
-        url = url.replace('/play/', '/');
+        url = url.replace('https://vavoo.to/live2/play/', 'https://vavoo.to/play/');
         url = url.replace('.ts', '/index.m3u8');
     }
 
