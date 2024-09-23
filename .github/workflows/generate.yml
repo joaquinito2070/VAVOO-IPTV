@@ -17,13 +17,13 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
       with:
-        node-version: '14'
+        python-version: '3.x'
 
-    - name: Run generate.js
-      run: node scripts/generate.js
+    - name: Run generate.py
+      run: python scripts/generate.py
 
     - name: Remove untracked files
       run: git clean -f
