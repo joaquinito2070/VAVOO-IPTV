@@ -28,14 +28,29 @@ jobs:
     - name: Remove untracked files
       run: git clean -f
 
-    - name: Commit and push changes to main
-      if: github.event_name != 'push'
+    - name: Create new branch
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add *.m3u index.html  # Only add M3U files and index.html
-        git diff --staged --quiet || git commit -m 'Automated update of M3U files'
-        git push origin main
+        git checkout -b automated-update-$(date +%Y%m%d%H%M%S)
+        git add *.m3u index.html
+        git commit -m 'Automated update of M3U files'
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: Automated update of M3U files
+        title: 'Automated update of M3U files'
+        body: 'This is an automated PR to update M3U files and index.html'
+        branch: automated-update-$(date +%Y%m%d%H%M%S)
+        base: main
+
+    - name: Merge Pull Request
+      uses: peter-evans/enable-pull-request-automerge@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        merge-method: squash
 
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
