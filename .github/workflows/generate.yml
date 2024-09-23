@@ -22,16 +22,15 @@ jobs:
       with:
         node-version: '14'
 
-    - name: Run generate.sh
-      run: |
-        chmod +x scripts/generate.sh
-        ./scripts/generate.sh
+    - name: Run generate.js
+      run: node scripts/generate.js
 
     - name: Commit and push changes to main-m3u
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git fetch origin main-m3u || git checkout -b main-m3u
+        git fetch origin main-m3u || git branch main-m3u
+        git checkout main-m3u
         git add .
         git commit -m 'Automated update of M3U files' || echo "No changes to commit"
         git push origin main-m3u --force
@@ -43,4 +42,3 @@ jobs:
         publish_dir: ./ # Publish the entire repository
         publish_branch: gh-pages
         force_orphan: true
-
