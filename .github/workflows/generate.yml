@@ -33,16 +33,16 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git checkout -b automated-update-$(date +%Y%m%d%H%M%S)
-        git add *.m3u index.html
-        git commit -m 'Automated update of M3U files'
+        git add .
+        git commit -m 'Automated update of files'
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: Automated update of M3U files
-        title: 'Automated update of M3U files'
-        body: 'This is an automated PR to update M3U files and index.html'
+        commit-message: Automated update of files
+        title: 'Automated update of files'
+        body: 'This is an automated PR to update files'
         branch: automated-update-$(date +%Y%m%d%H%M%S)
         base: main
 
