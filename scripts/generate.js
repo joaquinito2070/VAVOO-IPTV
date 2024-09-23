@@ -10,16 +10,17 @@ const appendFileAsync = promisify(fs.appendFile);
 function generateM3U(group, name, logo, tvgId, url) {
     // Modify URL if it contains .ts
     if (url.includes('.ts')) {
-        url = url.replace('https://www2.vavoo.to/live2/', 'https://vavoo.to/');
+        url = url.replace('https://vavoo.to/live2/', 'https://vavoo.to/');
         url = url.replace('/play/', '/');
+        url = url.replace('.ts', '/index.m3u8');
     }
 
-    return `#EXTINF:-1 tvg-id="${tvgId}" tvg-name="${name}" tvg-logo="${logo}" group-title="${group}" http-user-agent="VAVOO/1.0" http-referrer="https://www.vavoo.to/",${name}
+    return `#EXTINF:-1 tvg-id="${tvgId}" tvg-name="${name}" tvg-logo="${logo}" group-title="${group}" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",${name}
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://www.vavoo.to/
+#EXTVLCOPT:http-referrer=https://vavoo.to/
 #KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://www.vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://www.vavoo.to/"}
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 ${url}`;
 }
 
