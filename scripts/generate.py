@@ -1,6 +1,7 @@
 import asyncio
 import aiohttp
 import aiofiles
+import json
 from concurrent.futures import ThreadPoolExecutor
 
 # Function to generate M3U content
