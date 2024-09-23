@@ -24,7 +24,7 @@ json_data=$(curl -s "https://www2.vavoo.to/live2/index?countries=all&output=json
 echo "#EXTM3U" > index.m3u
 echo "" > groups.txt
 
-echo "$json_data" | jq -c '.[]' | parallel --progress --bar -j 2048 '
+echo "$json_data" | jq -c '.[]' | xargs -P 4096 -I {} bash -c '
     group=$(echo {} | jq -r .group)
     name=$(echo {} | jq -r .name)
     logo=$(echo {} | jq -r .logo)
