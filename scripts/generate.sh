@@ -31,7 +31,13 @@ echo "$json_data" | jq -c '.[]' | parallel -j 1024 '
     tvg_id=$(echo {} | jq -r .tvg_id)
     url=$(echo {} | jq -r .url)
 
-    m3u_content=$(generate_m3u "$group" "$name" "$logo" "$tvg_id" "$url")
+    m3u_content=$(echo "#EXTINF:-1 tvg-id=\"$tvg_id\" tvg-name=\"$name\" tvg-logo=\"$logo\" group-title=\"$group\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://www.vavoo.to/\",$name"; \
+                  echo "#EXTVLCOPT:http-user-agent=VAVOO/1.0"; \
+                  echo "#EXTVLCOPT:http-referrer=https://www.vavoo.to/"; \
+                  echo "#KODIPROP:http-user-agent=VAVOO/1.0"; \
+                  echo "#KODIPROP:http-referrer=https://www.vavoo.to/"; \
+                  echo "#EXTHTTP:{\"User-Agent\":\"VAVOO/1.0\",\"Referer\":\"https://www.vavoo.to/\"}"; \
+                  echo "$url")
     
     echo "$m3u_content" >> index.m3u
     echo "$m3u_content" >> "index_${group}.m3u"
