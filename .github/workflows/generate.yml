@@ -30,10 +30,10 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         branch_name="automated-update-$(date +%Y%m%d%H%M%S)"
-        git checkout -b $branch_name
+        git checkout -b "$branch_name"
         git add .
         git commit -m 'Automated update of files'
-        git push origin $branch_name
+        git push origin "$branch_name"
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
