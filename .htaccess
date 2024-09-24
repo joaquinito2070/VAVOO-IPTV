@@ -314,6 +314,10 @@ Redirect 301 /vavoo/2042545956.m3u8.m3u8 https://joaquinito02.es/vavoo/204254595
 <Files "2042545956.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3416136500.m3u8.m3u8 https://joaquinito02.es/vavoo/3416136500.m3u8
+<Files "3416136500.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1548793040.m3u8.m3u8 https://joaquinito02.es/vavoo/1548793040.m3u8
 <Files "1548793040.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -1164,6 +1168,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3865028858.m3u8.m3u8 https://joaquinito02.es/vavoo/3865028858.m3u8
 <Files "3865028858.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1500452507.m3u8.m3u8 https://joaquinito02.es/vavoo/1500452507.m3u8
+<Files "1500452507.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1678720811.m3u8.m3u8 https://joaquinito02.es/vavoo/1678720811.m3u8
@@ -2250,10 +2258,6 @@ Redirect 301 /vavoo/4098717505.m3u8.m3u8 https://joaquinito02.es/vavoo/409871750
 <Files "4098717505.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
-Redirect 301 /vavoo/3388979409.m3u8.m3u8 https://joaquinito02.es/vavoo/3388979409.m3u8
-<Files "3388979409.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
 Redirect 301 /vavoo/3364489313.m3u8.m3u8 https://joaquinito02.es/vavoo/3364489313.m3u8
 <Files "3364489313.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -2276,6 +2280,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3241421560.m3u8.m3u8 https://joaquinito02.es/vavoo/3241421560.m3u8
 <Files "3241421560.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/2257866792.m3u8.m3u8 https://joaquinito02.es/vavoo/2257866792.m3u8
+<Files "2257866792.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3153361304.m3u8.m3u8 https://joaquinito02.es/vavoo/3153361304.m3u8
@@ -2542,6 +2550,10 @@ Redirect 301 /vavoo/2053910442.m3u8.m3u8 https://joaquinito02.es/vavoo/205391044
 <Files "2053910442.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2686355607.m3u8.m3u8 https://joaquinito02.es/vavoo/2686355607.m3u8
+<Files "2686355607.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3110706438.m3u8.m3u8 https://joaquinito02.es/vavoo/3110706438.m3u8
 <Files "3110706438.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -2664,10 +2676,6 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1117471921.m3u8.m3u8 https://joaquinito02.es/vavoo/1117471921.m3u8
 <Files "1117471921.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
-Redirect 301 /vavoo/1176023953.m3u8.m3u8 https://joaquinito02.es/vavoo/1176023953.m3u8
-<Files "1176023953.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1037335952.m3u8.m3u8 https://joaquinito02.es/vavoo/1037335952.m3u8
@@ -2862,6 +2870,10 @@ Redirect 301 /vavoo/2301201739.m3u8.m3u8 https://joaquinito02.es/vavoo/230120173
 <Files "2301201739.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2961771314.m3u8.m3u8 https://joaquinito02.es/vavoo/2961771314.m3u8
+<Files "2961771314.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/4167553993.m3u8.m3u8 https://joaquinito02.es/vavoo/4167553993.m3u8
 <Files "4167553993.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -3046,6 +3058,10 @@ Redirect 301 /vavoo/3557692300.m3u8.m3u8 https://joaquinito02.es/vavoo/355769230
 <Files "3557692300.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/780409303.m3u8.m3u8 https://joaquinito02.es/vavoo/780409303.m3u8
+<Files "780409303.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1713644642.m3u8.m3u8 https://joaquinito02.es/vavoo/1713644642.m3u8
 <Files "1713644642.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -3060,6 +3076,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3979463967.m3u8.m3u8 https://joaquinito02.es/vavoo/3979463967.m3u8
 <Files "3979463967.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/2526457688.m3u8.m3u8 https://joaquinito02.es/vavoo/2526457688.m3u8
+<Files "2526457688.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/855333159.m3u8.m3u8 https://joaquinito02.es/vavoo/855333159.m3u8
@@ -3854,6 +3874,10 @@ Redirect 301 /vavoo/606852291.m3u8.m3u8 https://joaquinito02.es/vavoo/606852291.
 <Files "606852291.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1044078602.m3u8.m3u8 https://joaquinito02.es/vavoo/1044078602.m3u8
+<Files "1044078602.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1725615682.m3u8.m3u8 https://joaquinito02.es/vavoo/1725615682.m3u8
 <Files "1725615682.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -4042,6 +4066,10 @@ Redirect 301 /vavoo/3129337035.m3u8.m3u8 https://joaquinito02.es/vavoo/312933703
 <Files "3129337035.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2277123450.m3u8.m3u8 https://joaquinito02.es/vavoo/2277123450.m3u8
+<Files "2277123450.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/767567985.m3u8.m3u8 https://joaquinito02.es/vavoo/767567985.m3u8
 <Files "767567985.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -4124,6 +4152,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1622881023.m3u8.m3u8 https://joaquinito02.es/vavoo/1622881023.m3u8
 <Files "1622881023.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1574640463.m3u8.m3u8 https://joaquinito02.es/vavoo/1574640463.m3u8
+<Files "1574640463.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2339352940.m3u8.m3u8 https://joaquinito02.es/vavoo/2339352940.m3u8
@@ -4374,6 +4406,10 @@ Redirect 301 /vavoo/2760792828.m3u8.m3u8 https://joaquinito02.es/vavoo/276079282
 <Files "2760792828.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3467051802.m3u8.m3u8 https://joaquinito02.es/vavoo/3467051802.m3u8
+<Files "3467051802.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/4030242361.m3u8.m3u8 https://joaquinito02.es/vavoo/4030242361.m3u8
 <Files "4030242361.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -4408,6 +4444,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3522719651.m3u8.m3u8 https://joaquinito02.es/vavoo/3522719651.m3u8
 <Files "3522719651.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/2506867048.m3u8.m3u8 https://joaquinito02.es/vavoo/2506867048.m3u8
+<Files "2506867048.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1373972750.m3u8.m3u8 https://joaquinito02.es/vavoo/1373972750.m3u8
@@ -6718,6 +6758,10 @@ Redirect 301 /vavoo/3700394669.m3u8.m3u8 https://joaquinito02.es/vavoo/370039466
 <Files "3700394669.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/762353583.m3u8.m3u8 https://joaquinito02.es/vavoo/762353583.m3u8
+<Files "762353583.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3807352996.m3u8.m3u8 https://joaquinito02.es/vavoo/3807352996.m3u8
 <Files "3807352996.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -7184,6 +7228,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1735806851.m3u8.m3u8 https://joaquinito02.es/vavoo/1735806851.m3u8
 <Files "1735806851.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1782534194.m3u8.m3u8 https://joaquinito02.es/vavoo/1782534194.m3u8
+<Files "1782534194.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/4093001640.m3u8.m3u8 https://joaquinito02.es/vavoo/4093001640.m3u8
@@ -7714,6 +7762,14 @@ Redirect 301 /vavoo/3525155138.m3u8.m3u8 https://joaquinito02.es/vavoo/352515513
 <Files "3525155138.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1198414561.m3u8.m3u8 https://joaquinito02.es/vavoo/1198414561.m3u8
+<Files "1198414561.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/750698535.m3u8.m3u8 https://joaquinito02.es/vavoo/750698535.m3u8
+<Files "750698535.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/704689787.m3u8.m3u8 https://joaquinito02.es/vavoo/704689787.m3u8
 <Files "704689787.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -7732,6 +7788,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1578872642.m3u8.m3u8 https://joaquinito02.es/vavoo/1578872642.m3u8
 <Files "1578872642.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1131281902.m3u8.m3u8 https://joaquinito02.es/vavoo/1131281902.m3u8
+<Files "1131281902.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3998379019.m3u8.m3u8 https://joaquinito02.es/vavoo/3998379019.m3u8
@@ -7780,6 +7840,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3597292408.m3u8.m3u8 https://joaquinito02.es/vavoo/3597292408.m3u8
 <Files "3597292408.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1800204159.m3u8.m3u8 https://joaquinito02.es/vavoo/1800204159.m3u8
+<Files "1800204159.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3830353405.m3u8.m3u8 https://joaquinito02.es/vavoo/3830353405.m3u8
@@ -7940,6 +8004,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/4245508443.m3u8.m3u8 https://joaquinito02.es/vavoo/4245508443.m3u8
 <Files "4245508443.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3131911051.m3u8.m3u8 https://joaquinito02.es/vavoo/3131911051.m3u8
+<Files "3131911051.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1293127897.m3u8.m3u8 https://joaquinito02.es/vavoo/1293127897.m3u8
@@ -8212,6 +8280,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/885453469.m3u8.m3u8 https://joaquinito02.es/vavoo/885453469.m3u8
 <Files "885453469.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3126797390.m3u8.m3u8 https://joaquinito02.es/vavoo/3126797390.m3u8
+<Files "3126797390.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2730047464.m3u8.m3u8 https://joaquinito02.es/vavoo/2730047464.m3u8
@@ -9048,6 +9120,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/159197905.m3u8.m3u8 https://joaquinito02.es/vavoo/159197905.m3u8
 <Files "159197905.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/210773704.m3u8.m3u8 https://joaquinito02.es/vavoo/210773704.m3u8
+<Files "210773704.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2193331852.m3u8.m3u8 https://joaquinito02.es/vavoo/2193331852.m3u8
@@ -15542,6 +15618,10 @@ Redirect 301 /vavoo/3342849313.m3u8.m3u8 https://joaquinito02.es/vavoo/334284931
 <Files "3342849313.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2198410339.m3u8.m3u8 https://joaquinito02.es/vavoo/2198410339.m3u8
+<Files "2198410339.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3237793511.m3u8.m3u8 https://joaquinito02.es/vavoo/3237793511.m3u8
 <Files "3237793511.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -17690,6 +17770,10 @@ Redirect 301 /vavoo/355320503.m3u8.m3u8 https://joaquinito02.es/vavoo/355320503.
 <Files "355320503.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3042734297.m3u8.m3u8 https://joaquinito02.es/vavoo/3042734297.m3u8
+<Files "3042734297.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1066305614.m3u8.m3u8 https://joaquinito02.es/vavoo/1066305614.m3u8
 <Files "1066305614.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -19274,6 +19358,10 @@ Redirect 301 /vavoo/3598877177.m3u8.m3u8 https://joaquinito02.es/vavoo/359887717
 <Files "3598877177.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2857813786.m3u8.m3u8 https://joaquinito02.es/vavoo/2857813786.m3u8
+<Files "2857813786.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3343751751.m3u8.m3u8 https://joaquinito02.es/vavoo/3343751751.m3u8
 <Files "3343751751.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -19484,6 +19572,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1771511397.m3u8.m3u8 https://joaquinito02.es/vavoo/1771511397.m3u8
 <Files "1771511397.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/907165095.m3u8.m3u8 https://joaquinito02.es/vavoo/907165095.m3u8
+<Files "907165095.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3422827985.m3u8.m3u8 https://joaquinito02.es/vavoo/3422827985.m3u8
@@ -19838,6 +19930,10 @@ Redirect 301 /vavoo/361330240.m3u8.m3u8 https://joaquinito02.es/vavoo/361330240.
 <Files "361330240.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1144238417.m3u8.m3u8 https://joaquinito02.es/vavoo/1144238417.m3u8
+<Files "1144238417.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3401365170.m3u8.m3u8 https://joaquinito02.es/vavoo/3401365170.m3u8
 <Files "3401365170.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -20086,6 +20182,10 @@ Redirect 301 /vavoo/1719232329.m3u8.m3u8 https://joaquinito02.es/vavoo/171923232
 <Files "1719232329.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3339847432.m3u8.m3u8 https://joaquinito02.es/vavoo/3339847432.m3u8
+<Files "3339847432.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/4150813159.m3u8.m3u8 https://joaquinito02.es/vavoo/4150813159.m3u8
 <Files "4150813159.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -20282,6 +20382,10 @@ Redirect 301 /vavoo/3667032618.m3u8.m3u8 https://joaquinito02.es/vavoo/366703261
 <Files "3667032618.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2144127034.m3u8.m3u8 https://joaquinito02.es/vavoo/2144127034.m3u8
+<Files "2144127034.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1912454772.m3u8.m3u8 https://joaquinito02.es/vavoo/1912454772.m3u8
 <Files "1912454772.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -20380,6 +20484,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/230379861.m3u8.m3u8 https://joaquinito02.es/vavoo/230379861.m3u8
 <Files "230379861.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3314489412.m3u8.m3u8 https://joaquinito02.es/vavoo/3314489412.m3u8
+<Files "3314489412.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/906547600.m3u8.m3u8 https://joaquinito02.es/vavoo/906547600.m3u8
@@ -20610,6 +20718,10 @@ Redirect 301 /vavoo/1898402275.m3u8.m3u8 https://joaquinito02.es/vavoo/189840227
 <Files "1898402275.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3811837368.m3u8.m3u8 https://joaquinito02.es/vavoo/3811837368.m3u8
+<Files "3811837368.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/609422302.m3u8.m3u8 https://joaquinito02.es/vavoo/609422302.m3u8
 <Files "609422302.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -20660,6 +20772,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3992604526.m3u8.m3u8 https://joaquinito02.es/vavoo/3992604526.m3u8
 <Files "3992604526.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3438314740.m3u8.m3u8 https://joaquinito02.es/vavoo/3438314740.m3u8
+<Files "3438314740.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2255542168.m3u8.m3u8 https://joaquinito02.es/vavoo/2255542168.m3u8
@@ -21162,6 +21278,10 @@ Redirect 301 /vavoo/3659104045.m3u8.m3u8 https://joaquinito02.es/vavoo/365910404
 <Files "3659104045.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3396988961.m3u8.m3u8 https://joaquinito02.es/vavoo/3396988961.m3u8
+<Files "3396988961.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/171810308.m3u8.m3u8 https://joaquinito02.es/vavoo/171810308.m3u8
 <Files "171810308.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -21346,10 +21466,6 @@ Redirect 301 /vavoo/2819798312.m3u8.m3u8 https://joaquinito02.es/vavoo/281979831
 <Files "2819798312.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
-Redirect 301 /vavoo/3647850219.m3u8.m3u8 https://joaquinito02.es/vavoo/3647850219.m3u8
-<Files "3647850219.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
 Redirect 301 /vavoo/3108431077.m3u8.m3u8 https://joaquinito02.es/vavoo/3108431077.m3u8
 <Files "3108431077.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -21456,10 +21572,6 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2195807473.m3u8.m3u8 https://joaquinito02.es/vavoo/2195807473.m3u8
 <Files "2195807473.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
-Redirect 301 /vavoo/3035117099.m3u8.m3u8 https://joaquinito02.es/vavoo/3035117099.m3u8
-<Files "3035117099.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3729844109.m3u8.m3u8 https://joaquinito02.es/vavoo/3729844109.m3u8
@@ -22000,6 +22112,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2322261582.m3u8.m3u8 https://joaquinito02.es/vavoo/2322261582.m3u8
 <Files "2322261582.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/4118981528.m3u8.m3u8 https://joaquinito02.es/vavoo/4118981528.m3u8
+<Files "4118981528.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2880773158.m3u8.m3u8 https://joaquinito02.es/vavoo/2880773158.m3u8
@@ -23934,10 +24050,6 @@ Redirect 301 /vavoo/1819374107.m3u8.m3u8 https://joaquinito02.es/vavoo/181937410
 <Files "1819374107.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
-Redirect 301 /vavoo/3704911677.m3u8.m3u8 https://joaquinito02.es/vavoo/3704911677.m3u8
-<Files "3704911677.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
 Redirect 301 /vavoo/2852922399.m3u8.m3u8 https://joaquinito02.es/vavoo/2852922399.m3u8
 <Files "2852922399.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -24394,8 +24506,8 @@ Redirect 301 /vavoo/2205209166.m3u8.m3u8 https://joaquinito02.es/vavoo/220520916
 <Files "2205209166.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
-Redirect 301 /vavoo/2887920787.m3u8.m3u8 https://joaquinito02.es/vavoo/2887920787.m3u8
-<Files "2887920787.m3u8.m3u8">
+Redirect 301 /vavoo/3929129859.m3u8.m3u8 https://joaquinito02.es/vavoo/3929129859.m3u8
+<Files "3929129859.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/799861251.m3u8.m3u8 https://joaquinito02.es/vavoo/799861251.m3u8
@@ -24420,10 +24532,6 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3199959566.m3u8.m3u8 https://joaquinito02.es/vavoo/3199959566.m3u8
 <Files "3199959566.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
-Redirect 301 /vavoo/876902630.m3u8.m3u8 https://joaquinito02.es/vavoo/876902630.m3u8
-<Files "876902630.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/290768469.m3u8.m3u8 https://joaquinito02.es/vavoo/290768469.m3u8
@@ -24722,12 +24830,32 @@ Redirect 301 /vavoo/913512772.m3u8.m3u8 https://joaquinito02.es/vavoo/913512772.
 <Files "913512772.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1980256643.m3u8.m3u8 https://joaquinito02.es/vavoo/1980256643.m3u8
+<Files "1980256643.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/739661983.m3u8.m3u8 https://joaquinito02.es/vavoo/739661983.m3u8
 <Files "739661983.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3181562383.m3u8.m3u8 https://joaquinito02.es/vavoo/3181562383.m3u8
 <Files "3181562383.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1467474025.m3u8.m3u8 https://joaquinito02.es/vavoo/1467474025.m3u8
+<Files "1467474025.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/2151947006.m3u8.m3u8 https://joaquinito02.es/vavoo/2151947006.m3u8
+<Files "2151947006.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3525474500.m3u8.m3u8 https://joaquinito02.es/vavoo/3525474500.m3u8
+<Files "3525474500.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/2428372504.m3u8.m3u8 https://joaquinito02.es/vavoo/2428372504.m3u8
+<Files "2428372504.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/592733992.m3u8.m3u8 https://joaquinito02.es/vavoo/592733992.m3u8
@@ -24754,6 +24882,18 @@ Redirect 301 /vavoo/1799436752.m3u8.m3u8 https://joaquinito02.es/vavoo/179943675
 <Files "1799436752.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/752960256.m3u8.m3u8 https://joaquinito02.es/vavoo/752960256.m3u8
+<Files "752960256.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3429155458.m3u8.m3u8 https://joaquinito02.es/vavoo/3429155458.m3u8
+<Files "3429155458.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3290678085.m3u8.m3u8 https://joaquinito02.es/vavoo/3290678085.m3u8
+<Files "3290678085.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/756429210.m3u8.m3u8 https://joaquinito02.es/vavoo/756429210.m3u8
 <Files "756429210.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -24762,8 +24902,16 @@ Redirect 301 /vavoo/1213902795.m3u8.m3u8 https://joaquinito02.es/vavoo/121390279
 <Files "1213902795.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/148755622.m3u8.m3u8 https://joaquinito02.es/vavoo/148755622.m3u8
+<Files "148755622.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1363171548.m3u8.m3u8 https://joaquinito02.es/vavoo/1363171548.m3u8
 <Files "1363171548.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/333899466.m3u8.m3u8 https://joaquinito02.es/vavoo/333899466.m3u8
+<Files "333899466.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/712394452.m3u8.m3u8 https://joaquinito02.es/vavoo/712394452.m3u8
@@ -26254,10 +26402,6 @@ Redirect 301 /vavoo/1071808933.m3u8.m3u8 https://joaquinito02.es/vavoo/107180893
 <Files "1071808933.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
-Redirect 301 /vavoo/1458795517.m3u8.m3u8 https://joaquinito02.es/vavoo/1458795517.m3u8
-<Files "1458795517.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
 Redirect 301 /vavoo/601190127.m3u8.m3u8 https://joaquinito02.es/vavoo/601190127.m3u8
 <Files "601190127.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -26566,6 +26710,10 @@ Redirect 301 /vavoo/748262697.m3u8.m3u8 https://joaquinito02.es/vavoo/748262697.
 <Files "748262697.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1456413303.m3u8.m3u8 https://joaquinito02.es/vavoo/1456413303.m3u8
+<Files "1456413303.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3927680764.m3u8.m3u8 https://joaquinito02.es/vavoo/3927680764.m3u8
 <Files "3927680764.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -26650,6 +26798,10 @@ Redirect 301 /vavoo/3595848084.m3u8.m3u8 https://joaquinito02.es/vavoo/359584808
 <Files "3595848084.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3209018316.m3u8.m3u8 https://joaquinito02.es/vavoo/3209018316.m3u8
+<Files "3209018316.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/36354660.m3u8.m3u8 https://joaquinito02.es/vavoo/36354660.m3u8
 <Files "36354660.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -26682,6 +26834,10 @@ Redirect 301 /vavoo/3228877884.m3u8.m3u8 https://joaquinito02.es/vavoo/322887788
 <Files "3228877884.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2746922057.m3u8.m3u8 https://joaquinito02.es/vavoo/2746922057.m3u8
+<Files "2746922057.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/2938852936.m3u8.m3u8 https://joaquinito02.es/vavoo/2938852936.m3u8
 <Files "2938852936.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -26712,6 +26868,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2227354543.m3u8.m3u8 https://joaquinito02.es/vavoo/2227354543.m3u8
 <Files "2227354543.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3609692090.m3u8.m3u8 https://joaquinito02.es/vavoo/3609692090.m3u8
+<Files "3609692090.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3241315611.m3u8.m3u8 https://joaquinito02.es/vavoo/3241315611.m3u8
@@ -26852,6 +27012,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1385797497.m3u8.m3u8 https://joaquinito02.es/vavoo/1385797497.m3u8
 <Files "1385797497.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1172734405.m3u8.m3u8 https://joaquinito02.es/vavoo/1172734405.m3u8
+<Files "1172734405.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/553970234.m3u8.m3u8 https://joaquinito02.es/vavoo/553970234.m3u8
@@ -27050,10 +27214,6 @@ Redirect 301 /vavoo/3175116374.m3u8.m3u8 https://joaquinito02.es/vavoo/317511637
 <Files "3175116374.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
-Redirect 301 /vavoo/1060615724.m3u8.m3u8 https://joaquinito02.es/vavoo/1060615724.m3u8
-<Files "1060615724.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
 Redirect 301 /vavoo/4087199410.m3u8.m3u8 https://joaquinito02.es/vavoo/4087199410.m3u8
 <Files "4087199410.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -27186,8 +27346,20 @@ Redirect 301 /vavoo/622250285.m3u8.m3u8 https://joaquinito02.es/vavoo/622250285.
 <Files "622250285.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2674415975.m3u8.m3u8 https://joaquinito02.es/vavoo/2674415975.m3u8
+<Files "2674415975.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3162967578.m3u8.m3u8 https://joaquinito02.es/vavoo/3162967578.m3u8
 <Files "3162967578.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3534948376.m3u8.m3u8 https://joaquinito02.es/vavoo/3534948376.m3u8
+<Files "3534948376.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/2176509151.m3u8.m3u8 https://joaquinito02.es/vavoo/2176509151.m3u8
+<Files "2176509151.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3117831607.m3u8.m3u8 https://joaquinito02.es/vavoo/3117831607.m3u8
@@ -27418,6 +27590,10 @@ Redirect 301 /vavoo/235122639.m3u8.m3u8 https://joaquinito02.es/vavoo/235122639.
 <Files "235122639.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3021144168.m3u8.m3u8 https://joaquinito02.es/vavoo/3021144168.m3u8
+<Files "3021144168.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3030555861.m3u8.m3u8 https://joaquinito02.es/vavoo/3030555861.m3u8
 <Files "3030555861.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -27456,6 +27632,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/122860021.m3u8.m3u8 https://joaquinito02.es/vavoo/122860021.m3u8
 <Files "122860021.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/4035838813.m3u8.m3u8 https://joaquinito02.es/vavoo/4035838813.m3u8
+<Files "4035838813.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3003713791.m3u8.m3u8 https://joaquinito02.es/vavoo/3003713791.m3u8
@@ -27622,16 +27802,8 @@ Redirect 301 /vavoo/1853551406.m3u8.m3u8 https://joaquinito02.es/vavoo/185355140
 <Files "1853551406.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
-Redirect 301 /vavoo/702188030.m3u8.m3u8 https://joaquinito02.es/vavoo/702188030.m3u8
-<Files "702188030.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
 Redirect 301 /vavoo/2795142238.m3u8.m3u8 https://joaquinito02.es/vavoo/2795142238.m3u8
 <Files "2795142238.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
-Redirect 301 /vavoo/2616874478.m3u8.m3u8 https://joaquinito02.es/vavoo/2616874478.m3u8
-<Files "2616874478.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3696897854.m3u8.m3u8 https://joaquinito02.es/vavoo/3696897854.m3u8
@@ -27830,10 +28002,6 @@ Redirect 301 /vavoo/1495501666.m3u8.m3u8 https://joaquinito02.es/vavoo/149550166
 <Files "1495501666.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
-Redirect 301 /vavoo/1976246828.m3u8.m3u8 https://joaquinito02.es/vavoo/1976246828.m3u8
-<Files "1976246828.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
 Redirect 301 /vavoo/2473434130.m3u8.m3u8 https://joaquinito02.es/vavoo/2473434130.m3u8
 <Files "2473434130.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -27868,10 +28036,6 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3362263722.m3u8.m3u8 https://joaquinito02.es/vavoo/3362263722.m3u8
 <Files "3362263722.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
-Redirect 301 /vavoo/821753191.m3u8.m3u8 https://joaquinito02.es/vavoo/821753191.m3u8
-<Files "821753191.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3739835247.m3u8.m3u8 https://joaquinito02.es/vavoo/3739835247.m3u8
@@ -27982,6 +28146,10 @@ Redirect 301 /vavoo/3825340931.m3u8.m3u8 https://joaquinito02.es/vavoo/382534093
 <Files "3825340931.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1787631072.m3u8.m3u8 https://joaquinito02.es/vavoo/1787631072.m3u8
+<Files "1787631072.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/2787579262.m3u8.m3u8 https://joaquinito02.es/vavoo/2787579262.m3u8
 <Files "2787579262.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -28040,6 +28208,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3251224651.m3u8.m3u8 https://joaquinito02.es/vavoo/3251224651.m3u8
 <Files "3251224651.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1779919359.m3u8.m3u8 https://joaquinito02.es/vavoo/1779919359.m3u8
+<Files "1779919359.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/185991845.m3u8.m3u8 https://joaquinito02.es/vavoo/185991845.m3u8
@@ -28512,6 +28684,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1278410942.m3u8.m3u8 https://joaquinito02.es/vavoo/1278410942.m3u8
 <Files "1278410942.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1318804769.m3u8.m3u8 https://joaquinito02.es/vavoo/1318804769.m3u8
+<Files "1318804769.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/4096804646.m3u8.m3u8 https://joaquinito02.es/vavoo/4096804646.m3u8
@@ -31450,6 +31626,10 @@ Redirect 301 /vavoo/2673626663.m3u8.m3u8 https://joaquinito02.es/vavoo/267362666
 <Files "2673626663.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/109394788.m3u8.m3u8 https://joaquinito02.es/vavoo/109394788.m3u8
+<Files "109394788.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3923153097.m3u8.m3u8 https://joaquinito02.es/vavoo/3923153097.m3u8
 <Files "3923153097.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -31754,6 +31934,10 @@ Redirect 301 /vavoo/3152079168.m3u8.m3u8 https://joaquinito02.es/vavoo/315207916
 <Files "3152079168.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3510107618.m3u8.m3u8 https://joaquinito02.es/vavoo/3510107618.m3u8
+<Files "3510107618.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3278185898.m3u8.m3u8 https://joaquinito02.es/vavoo/3278185898.m3u8
 <Files "3278185898.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -31950,10 +32134,6 @@ Redirect 301 /vavoo/879588960.m3u8.m3u8 https://joaquinito02.es/vavoo/879588960.
 <Files "879588960.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
-Redirect 301 /vavoo/31596047.m3u8.m3u8 https://joaquinito02.es/vavoo/31596047.m3u8
-<Files "31596047.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
 Redirect 301 /vavoo/2429298798.m3u8.m3u8 https://joaquinito02.es/vavoo/2429298798.m3u8
 <Files "2429298798.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -32106,6 +32286,10 @@ Redirect 301 /vavoo/867875861.m3u8.m3u8 https://joaquinito02.es/vavoo/867875861.
 <Files "867875861.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1289576145.m3u8.m3u8 https://joaquinito02.es/vavoo/1289576145.m3u8
+<Files "1289576145.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1905749779.m3u8.m3u8 https://joaquinito02.es/vavoo/1905749779.m3u8
 <Files "1905749779.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -32118,8 +32302,16 @@ Redirect 301 /vavoo/4225961715.m3u8.m3u8 https://joaquinito02.es/vavoo/422596171
 <Files "4225961715.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/225124967.m3u8.m3u8 https://joaquinito02.es/vavoo/225124967.m3u8
+<Files "225124967.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/832790897.m3u8.m3u8 https://joaquinito02.es/vavoo/832790897.m3u8
 <Files "832790897.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3055235391.m3u8.m3u8 https://joaquinito02.es/vavoo/3055235391.m3u8
+<Files "3055235391.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/145755891.m3u8.m3u8 https://joaquinito02.es/vavoo/145755891.m3u8
@@ -32128,6 +32320,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2702391715.m3u8.m3u8 https://joaquinito02.es/vavoo/2702391715.m3u8
 <Files "2702391715.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/955806672.m3u8.m3u8 https://joaquinito02.es/vavoo/955806672.m3u8
+<Files "955806672.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3728553873.m3u8.m3u8 https://joaquinito02.es/vavoo/3728553873.m3u8
@@ -32148,6 +32344,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/4274827801.m3u8.m3u8 https://joaquinito02.es/vavoo/4274827801.m3u8
 <Files "4274827801.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1943578223.m3u8.m3u8 https://joaquinito02.es/vavoo/1943578223.m3u8
+<Files "1943578223.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/4250561695.m3u8.m3u8 https://joaquinito02.es/vavoo/4250561695.m3u8
@@ -32174,8 +32374,16 @@ Redirect 301 /vavoo/1570235694.m3u8.m3u8 https://joaquinito02.es/vavoo/157023569
 <Files "1570235694.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1443355363.m3u8.m3u8 https://joaquinito02.es/vavoo/1443355363.m3u8
+<Files "1443355363.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/754868351.m3u8.m3u8 https://joaquinito02.es/vavoo/754868351.m3u8
 <Files "754868351.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1940767005.m3u8.m3u8 https://joaquinito02.es/vavoo/1940767005.m3u8
+<Files "1940767005.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/931406409.m3u8.m3u8 https://joaquinito02.es/vavoo/931406409.m3u8
@@ -32200,6 +32408,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3511150491.m3u8.m3u8 https://joaquinito02.es/vavoo/3511150491.m3u8
 <Files "3511150491.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/962169494.m3u8.m3u8 https://joaquinito02.es/vavoo/962169494.m3u8
+<Files "962169494.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/154080342.m3u8.m3u8 https://joaquinito02.es/vavoo/154080342.m3u8
@@ -32228,6 +32440,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1363827223.m3u8.m3u8 https://joaquinito02.es/vavoo/1363827223.m3u8
 <Files "1363827223.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3692337241.m3u8.m3u8 https://joaquinito02.es/vavoo/3692337241.m3u8
+<Files "3692337241.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2919229346.m3u8.m3u8 https://joaquinito02.es/vavoo/2919229346.m3u8
@@ -32328,6 +32544,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3989995533.m3u8.m3u8 https://joaquinito02.es/vavoo/3989995533.m3u8
 <Files "3989995533.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1646632825.m3u8.m3u8 https://joaquinito02.es/vavoo/1646632825.m3u8
+<Files "1646632825.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/4071474743.m3u8.m3u8 https://joaquinito02.es/vavoo/4071474743.m3u8
@@ -32478,6 +32698,14 @@ Redirect 301 /vavoo/11743931.m3u8.m3u8 https://joaquinito02.es/vavoo/11743931.m3
 <Files "11743931.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2794224703.m3u8.m3u8 https://joaquinito02.es/vavoo/2794224703.m3u8
+<Files "2794224703.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1840145851.m3u8.m3u8 https://joaquinito02.es/vavoo/1840145851.m3u8
+<Files "1840145851.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/910953672.m3u8.m3u8 https://joaquinito02.es/vavoo/910953672.m3u8
 <Files "910953672.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -32538,8 +32766,16 @@ Redirect 301 /vavoo/1310133020.m3u8.m3u8 https://joaquinito02.es/vavoo/131013302
 <Files "1310133020.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2660902091.m3u8.m3u8 https://joaquinito02.es/vavoo/2660902091.m3u8
+<Files "2660902091.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3983067532.m3u8.m3u8 https://joaquinito02.es/vavoo/3983067532.m3u8
 <Files "3983067532.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/230189059.m3u8.m3u8 https://joaquinito02.es/vavoo/230189059.m3u8
+<Files "230189059.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2337350974.m3u8.m3u8 https://joaquinito02.es/vavoo/2337350974.m3u8
@@ -32842,12 +33078,28 @@ Redirect 301 /vavoo/711944272.m3u8.m3u8 https://joaquinito02.es/vavoo/711944272.
 <Files "711944272.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3504045857.m3u8.m3u8 https://joaquinito02.es/vavoo/3504045857.m3u8
+<Files "3504045857.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/634397776.m3u8.m3u8 https://joaquinito02.es/vavoo/634397776.m3u8
+<Files "634397776.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3515455741.m3u8.m3u8 https://joaquinito02.es/vavoo/3515455741.m3u8
 <Files "3515455741.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3991081632.m3u8.m3u8 https://joaquinito02.es/vavoo/3991081632.m3u8
 <Files "3991081632.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3498658720.m3u8.m3u8 https://joaquinito02.es/vavoo/3498658720.m3u8
+<Files "3498658720.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/4090141978.m3u8.m3u8 https://joaquinito02.es/vavoo/4090141978.m3u8
+<Files "4090141978.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1290434890.m3u8.m3u8 https://joaquinito02.es/vavoo/1290434890.m3u8
@@ -32990,12 +33242,20 @@ Redirect 301 /vavoo/1285510370.m3u8.m3u8 https://joaquinito02.es/vavoo/128551037
 <Files "1285510370.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3681963823.m3u8.m3u8 https://joaquinito02.es/vavoo/3681963823.m3u8
+<Files "3681963823.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1345288490.m3u8.m3u8 https://joaquinito02.es/vavoo/1345288490.m3u8
 <Files "1345288490.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1203601013.m3u8.m3u8 https://joaquinito02.es/vavoo/1203601013.m3u8
 <Files "1203601013.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/2843011698.m3u8.m3u8 https://joaquinito02.es/vavoo/2843011698.m3u8
+<Files "2843011698.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2413536917.m3u8.m3u8 https://joaquinito02.es/vavoo/2413536917.m3u8
@@ -33042,8 +33302,16 @@ Redirect 301 /vavoo/2322262210.m3u8.m3u8 https://joaquinito02.es/vavoo/232226221
 <Files "2322262210.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1224377838.m3u8.m3u8 https://joaquinito02.es/vavoo/1224377838.m3u8
+<Files "1224377838.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3241393177.m3u8.m3u8 https://joaquinito02.es/vavoo/3241393177.m3u8
 <Files "3241393177.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/205624997.m3u8.m3u8 https://joaquinito02.es/vavoo/205624997.m3u8
+<Files "205624997.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/4069774068.m3u8.m3u8 https://joaquinito02.es/vavoo/4069774068.m3u8
@@ -33060,6 +33328,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2360854158.m3u8.m3u8 https://joaquinito02.es/vavoo/2360854158.m3u8
 <Files "2360854158.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1857563183.m3u8.m3u8 https://joaquinito02.es/vavoo/1857563183.m3u8
+<Files "1857563183.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1470199900.m3u8.m3u8 https://joaquinito02.es/vavoo/1470199900.m3u8
@@ -33186,6 +33458,10 @@ Redirect 301 /vavoo/1371306270.m3u8.m3u8 https://joaquinito02.es/vavoo/137130627
 <Files "1371306270.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/4113822297.m3u8.m3u8 https://joaquinito02.es/vavoo/4113822297.m3u8
+<Files "4113822297.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/4193250917.m3u8.m3u8 https://joaquinito02.es/vavoo/4193250917.m3u8
 <Files "4193250917.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -33194,12 +33470,28 @@ Redirect 301 /vavoo/712040085.m3u8.m3u8 https://joaquinito02.es/vavoo/712040085.
 <Files "712040085.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1846780399.m3u8.m3u8 https://joaquinito02.es/vavoo/1846780399.m3u8
+<Files "1846780399.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3390708983.m3u8.m3u8 https://joaquinito02.es/vavoo/3390708983.m3u8
 <Files "3390708983.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/168048388.m3u8.m3u8 https://joaquinito02.es/vavoo/168048388.m3u8
 <Files "168048388.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/161664882.m3u8.m3u8 https://joaquinito02.es/vavoo/161664882.m3u8
+<Files "161664882.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/829204946.m3u8.m3u8 https://joaquinito02.es/vavoo/829204946.m3u8
+<Files "829204946.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/2071472807.m3u8.m3u8 https://joaquinito02.es/vavoo/2071472807.m3u8
+<Files "2071472807.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/464447693.m3u8.m3u8 https://joaquinito02.es/vavoo/464447693.m3u8
@@ -33252,6 +33544,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/535260022.m3u8.m3u8 https://joaquinito02.es/vavoo/535260022.m3u8
 <Files "535260022.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/2114384051.m3u8.m3u8 https://joaquinito02.es/vavoo/2114384051.m3u8
+<Files "2114384051.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2805225634.m3u8.m3u8 https://joaquinito02.es/vavoo/2805225634.m3u8
@@ -33308,6 +33604,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3628846585.m3u8.m3u8 https://joaquinito02.es/vavoo/3628846585.m3u8
 <Files "3628846585.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1480015488.m3u8.m3u8 https://joaquinito02.es/vavoo/1480015488.m3u8
+<Files "1480015488.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1751593588.m3u8.m3u8 https://joaquinito02.es/vavoo/1751593588.m3u8
@@ -33406,8 +33706,16 @@ Redirect 301 /vavoo/1220417659.m3u8.m3u8 https://joaquinito02.es/vavoo/122041765
 <Files "1220417659.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/1712849933.m3u8.m3u8 https://joaquinito02.es/vavoo/1712849933.m3u8
+<Files "1712849933.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3194104127.m3u8.m3u8 https://joaquinito02.es/vavoo/3194104127.m3u8
 <Files "3194104127.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/2862710352.m3u8.m3u8 https://joaquinito02.es/vavoo/2862710352.m3u8
+<Files "2862710352.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3614694247.m3u8.m3u8 https://joaquinito02.es/vavoo/3614694247.m3u8
@@ -33424,6 +33732,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2879086761.m3u8.m3u8 https://joaquinito02.es/vavoo/2879086761.m3u8
 <Files "2879086761.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/173629287.m3u8.m3u8 https://joaquinito02.es/vavoo/173629287.m3u8
+<Files "173629287.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/4220843069.m3u8.m3u8 https://joaquinito02.es/vavoo/4220843069.m3u8
@@ -33594,6 +33906,10 @@ Redirect 301 /vavoo/3726238957.m3u8.m3u8 https://joaquinito02.es/vavoo/372623895
 <Files "3726238957.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/4096268883.m3u8.m3u8 https://joaquinito02.es/vavoo/4096268883.m3u8
+<Files "4096268883.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/224476833.m3u8.m3u8 https://joaquinito02.es/vavoo/224476833.m3u8
 <Files "224476833.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -33722,6 +34038,14 @@ Redirect 301 /vavoo/138632579.m3u8.m3u8 https://joaquinito02.es/vavoo/138632579.
 <Files "138632579.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3954790015.m3u8.m3u8 https://joaquinito02.es/vavoo/3954790015.m3u8
+<Files "3954790015.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3122863032.m3u8.m3u8 https://joaquinito02.es/vavoo/3122863032.m3u8
+<Files "3122863032.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3430890461.m3u8.m3u8 https://joaquinito02.es/vavoo/3430890461.m3u8
 <Files "3430890461.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -33814,6 +34138,10 @@ Redirect 301 /vavoo/3560292869.m3u8.m3u8 https://joaquinito02.es/vavoo/356029286
 <Files "3560292869.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3382394739.m3u8.m3u8 https://joaquinito02.es/vavoo/3382394739.m3u8
+<Files "3382394739.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1110088936.m3u8.m3u8 https://joaquinito02.es/vavoo/1110088936.m3u8
 <Files "1110088936.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -33834,6 +34162,10 @@ Redirect 301 /vavoo/3925938631.m3u8.m3u8 https://joaquinito02.es/vavoo/392593863
 <Files "3925938631.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2814392458.m3u8.m3u8 https://joaquinito02.es/vavoo/2814392458.m3u8
+<Files "2814392458.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3562740054.m3u8.m3u8 https://joaquinito02.es/vavoo/3562740054.m3u8
 <Files "3562740054.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -33844,6 +34176,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/163038510.m3u8.m3u8 https://joaquinito02.es/vavoo/163038510.m3u8
 <Files "163038510.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1406262118.m3u8.m3u8 https://joaquinito02.es/vavoo/1406262118.m3u8
+<Files "1406262118.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2896658744.m3u8.m3u8 https://joaquinito02.es/vavoo/2896658744.m3u8
@@ -33914,6 +34250,10 @@ Redirect 301 /vavoo/194373112.m3u8.m3u8 https://joaquinito02.es/vavoo/194373112.
 <Files "194373112.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2346924541.m3u8.m3u8 https://joaquinito02.es/vavoo/2346924541.m3u8
+<Files "2346924541.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/566281043.m3u8.m3u8 https://joaquinito02.es/vavoo/566281043.m3u8
 <Files "566281043.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -33944,6 +34284,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/2057965553.m3u8.m3u8 https://joaquinito02.es/vavoo/2057965553.m3u8
 <Files "2057965553.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/93108665.m3u8.m3u8 https://joaquinito02.es/vavoo/93108665.m3u8
+<Files "93108665.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3063329534.m3u8.m3u8 https://joaquinito02.es/vavoo/3063329534.m3u8
@@ -34000,6 +34344,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/21895121.m3u8.m3u8 https://joaquinito02.es/vavoo/21895121.m3u8
 <Files "21895121.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/942180218.m3u8.m3u8 https://joaquinito02.es/vavoo/942180218.m3u8
+<Files "942180218.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3769488982.m3u8.m3u8 https://joaquinito02.es/vavoo/3769488982.m3u8
@@ -34062,12 +34410,24 @@ Redirect 301 /vavoo/208162889.m3u8.m3u8 https://joaquinito02.es/vavoo/208162889.
 <Files "208162889.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3524690612.m3u8.m3u8 https://joaquinito02.es/vavoo/3524690612.m3u8
+<Files "3524690612.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1182480796.m3u8.m3u8 https://joaquinito02.es/vavoo/1182480796.m3u8
 <Files "1182480796.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/2916629658.m3u8.m3u8 https://joaquinito02.es/vavoo/2916629658.m3u8
+<Files "2916629658.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/3641991612.m3u8.m3u8 https://joaquinito02.es/vavoo/3641991612.m3u8
 <Files "3641991612.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/3203334343.m3u8.m3u8 https://joaquinito02.es/vavoo/3203334343.m3u8
+<Files "3203334343.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1910890160.m3u8.m3u8 https://joaquinito02.es/vavoo/1910890160.m3u8
@@ -34110,6 +34470,10 @@ Redirect 301 /vavoo/1917903629.m3u8.m3u8 https://joaquinito02.es/vavoo/191790362
 <Files "1917903629.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/3282181511.m3u8.m3u8 https://joaquinito02.es/vavoo/3282181511.m3u8
+<Files "3282181511.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1183258440.m3u8.m3u8 https://joaquinito02.es/vavoo/1183258440.m3u8
 <Files "1183258440.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -34146,6 +34510,14 @@ Redirect 301 /vavoo/1788503935.m3u8.m3u8 https://joaquinito02.es/vavoo/178850393
 <Files "1788503935.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
+Redirect 301 /vavoo/758663570.m3u8.m3u8 https://joaquinito02.es/vavoo/758663570.m3u8
+<Files "758663570.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/394501159.m3u8.m3u8 https://joaquinito02.es/vavoo/394501159.m3u8
+<Files "394501159.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
 Redirect 301 /vavoo/1240136619.m3u8.m3u8 https://joaquinito02.es/vavoo/1240136619.m3u8
 <Files "1240136619.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
@@ -34156,6 +34528,10 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/607077155.m3u8.m3u8 https://joaquinito02.es/vavoo/607077155.m3u8
 <Files "607077155.m3u8.m3u8">
+Header set Access-Control-Allow-Origin "*"
+</Files>
+Redirect 301 /vavoo/1467834090.m3u8.m3u8 https://joaquinito02.es/vavoo/1467834090.m3u8
+<Files "1467834090.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/3269335957.m3u8.m3u8 https://joaquinito02.es/vavoo/3269335957.m3u8
@@ -34476,10 +34852,6 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1060350297.m3u8.m3u8 https://joaquinito02.es/vavoo/1060350297.m3u8
 <Files "1060350297.m3u8.m3u8">
-Header set Access-Control-Allow-Origin "*"
-</Files>
-Redirect 301 /vavoo/4155381642.m3u8.m3u8 https://joaquinito02.es/vavoo/4155381642.m3u8
-<Files "4155381642.m3u8.m3u8">
 Header set Access-Control-Allow-Origin "*"
 </Files>
 Redirect 301 /vavoo/1151638913.m3u8.m3u8 https://joaquinito02.es/vavoo/1151638913.m3u8
