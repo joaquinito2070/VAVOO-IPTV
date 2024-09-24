@@ -71,6 +71,15 @@ func main() {
 		return
 	}
 
+	// Remove existing index.m3u file if it exists
+	if _, err := os.Stat("index.m3u"); err == nil {
+		err = os.Remove("index.m3u")
+		if err != nil {
+			fmt.Printf("Error removing existing index.m3u: %v\n", err)
+			return
+		}
+	}
+
 	indexM3U, err := os.Create("index.m3u")
 	if err != nil {
 		fmt.Printf("Error creating index.m3u: %v\n", err)
@@ -94,7 +103,17 @@ func main() {
 
 		indexM3U.WriteString(m3uContent + "\n")
 
-		groupFile, err := os.OpenFile("index_"+group+".m3u", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+		groupFileName := "index_" + group + ".m3u"
+		// Remove existing group file if it exists
+		if _, err := os.Stat(groupFileName); err == nil {
+			err = os.Remove(groupFileName)
+			if err != nil {
+				fmt.Printf("Error removing existing %s: %v\n", groupFileName, err)
+				continue
+			}
+		}
+
+		groupFile, err := os.OpenFile(groupFileName, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 		if err != nil {
 			fmt.Printf("Error opening group file: %v\n", err)
 			continue
