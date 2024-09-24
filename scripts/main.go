@@ -20,15 +20,6 @@ type Item struct {
 
 // generateM3U generates M3U content for a single item
 func generateM3U(group, name, logo, tvgID, url string) (string, string) {
-	// Extract ID from URL
-	id := ""
-	if strings.Contains(url, "/play/") {
-		parts := strings.Split(url, "/play/")
-		if len(parts) > 1 {
-			id = strings.Split(parts[1], "/")[0]
-		}
-	}
-
 	// Replace .ts with /index.m3u8 and /live2/play with /play
 	url = strings.Replace(url, ".ts", "/index.m3u8", -1)
 	url = strings.Replace(url, "/live2/play", "/play", -1)
