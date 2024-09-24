@@ -22,12 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Lock Pull Request
-      uses: dessant/lock-threads@v2
-      with:
-        issue-lock-labels: 'locked'
-        lock-reason: 'resolved'
-        token: ${{ secrets.GITHUB_TOKEN }}
-        issue-number: ${{ github.event.pull_request.number }}
+      run: |
+        gh pr lock ${{ github.event.pull_request.html_url }} -r "resolved"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   close_issues:
     if: github.event_name == 'issues'
@@ -44,10 +42,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Lock Issue
-      uses: dessant/lock-threads@v2
-      with:
-        issue-lock-labels: 'locked'
-        lock-reason: 'resolved'
-        token: ${{ secrets.GITHUB_TOKEN }}
-        issue-number: ${{ github.event.issue.number }}
+      run: |
+        gh issue lock ${{ github.event.issue.html_url }} -r "resolved"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
