@@ -95,7 +95,7 @@ func main() {
 	groups := make(map[string]*os.File)
 	processedCount := 0
 
-	htaccessContent := ""
+	htaccessContent := "RewriteEngine On\n"
 
 	for _, item := range items {
 		m3uContent, group, htaccessURL, err := processItem(item)
