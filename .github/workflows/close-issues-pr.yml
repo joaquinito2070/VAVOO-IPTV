@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Close Pull Request
       run: |
-        gh pr close ${{ github.event.pull_request.number }} -c "This repository is read-only and managed by a bot. Pull requests are not accepted."
+        gh pr close ${{ github.event.pull_request.html_url }} -c "This repository is read-only and managed by a bot. Pull requests are not accepted."
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,7 +32,7 @@ jobs:
     steps:
     - name: Close Issue
       run: |
-        gh issue close ${{ github.event.issue.number }} -c "This repository is read-only and managed by a bot. Issues are not accepted."
+        gh issue close ${{ github.event.issue.html_url }} -c "This repository is read-only and managed by a bot. Issues are not accepted."
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
