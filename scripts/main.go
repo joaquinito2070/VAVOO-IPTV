@@ -95,10 +95,11 @@ func main() {
 	groups := make(map[string]*os.File)
 	processedCount := 0
 
-	htaccessContent := "RewriteEngine On\n"
+	// Initialize ids.txt content
+	var idsContent string
 
 	for _, item := range items {
-		m3uContent, group, htaccessURL, err := processItem(item)
+		m3uContent, group, _, err := processItem(item)
 		if err != nil {
 			fmt.Printf("Error processing item: %v\n", err)
 			continue
@@ -118,14 +119,8 @@ func main() {
 		indexM3U.WriteString(m3uContent + "\n")
 		groups[group].WriteString(m3uContent + "\n")
 
-		// Add to .htaccess content
-		if htaccessURL != "" {
-			htaccessURLParts := strings.Split(htaccessURL, "/vavoo/")
-			if len(htaccessURLParts) > 1 {
-				htaccessContent += fmt.Sprintf("Redirect 301 /vavoo/%s.m3u8 %s\n", htaccessURLParts[1], htaccessURL)
-				htaccessContent += fmt.Sprintf("<Files \"%s.m3u8\">\nHeader set Access-Control-Allow-Origin \"*\"\n</Files>\n", htaccessURLParts[1])
-			}
-		}
+		// Add to ids.txt content
+		idsContent += item.TvgID + "\n"
 
 		processedCount++
 		fmt.Printf("Processed %d/%d channels\n", processedCount, len(items))
@@ -135,10 +130,10 @@ func main() {
 		groupFile.Close()
 	}
 
-	// Write .htaccess file
-	err = ioutil.WriteFile(".htaccess", []byte(htaccessContent), 0644)
+	// Write ids.txt file
+	err = ioutil.WriteFile("ids.txt", []byte(idsContent), 0644)
 	if err != nil {
-		fmt.Printf("Error writing .htaccess: %v\n", err)
+		fmt.Printf("Error writing ids.txt: %v\n", err)
 		return
 	}
 
@@ -171,5 +166,5 @@ func main() {
 		return
 	}
 
-	fmt.Println("M3U files, .htaccess, and HTML index generated successfully.")
+	fmt.Println("M3U files, ids.txt, and HTML index generated successfully.")
 }
