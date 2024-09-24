@@ -19,7 +19,16 @@ type Item struct {
 }
 
 // generateM3U generates M3U content for a single item
-func generateM3U(group, name, logo, tvgID, url string) string {
+func generateM3U(group, name, logo, tvgID, url string) (string, string) {
+	// Extract ID from URL
+	id := ""
+	if strings.Contains(url, "/play/") {
+		parts := strings.Split(url, "/play/")
+		if len(parts) > 1 {
+			id = strings.Split(parts[1], "/")[0]
+		}
+	}
+
 	// Replace .ts with /index.m3u8 and /live2/play with /play
 	url = strings.Replace(url, ".ts", "/index.m3u8", -1)
 	url = strings.Replace(url, "/live2/play", "/play", -1)
@@ -32,13 +41,17 @@ func generateM3U(group, name, logo, tvgID, url string) string {
 		url = url + "/index.m3u8"
 	}
 
+	// Replace URL for .htaccess
+	htaccessURL := strings.Replace(url, "https://vavoo.to/play/", "https://joaquinito02.es/vavoo/", 1)
+	htaccessURL = strings.Replace(htaccessURL, "/index.m3u8", ".m3u8", 1)
+
 	return fmt.Sprintf("#EXTINF:-1 tvg-id=\"%s\" tvg-name=\"%s\" tvg-logo=\"%s\" group-title=\"%s\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://vavoo.to/\",%s\n"+
 		"#EXTVLCOPT:http-user-agent=VAVOO/1.0\n"+
 		"#EXTVLCOPT:http-referrer=https://vavoo.to/\n"+
 		"#KODIPROP:http-user-agent=VAVOO/1.0\n"+
 		"#KODIPROP:http-referrer=https://vavoo.to/\n"+
 		"#EXTHTTP:{\"User-Agent\":\"VAVOO/1.0\",\"Referer\":\"https://vavoo.to/\"}\n"+
-		"%s", tvgID, name, logo, group, name, url)
+		"%s", tvgID, name, logo, group, name, url), htaccessURL
 }
 
 // fetchJSONData fetches JSON data from the specified URL
@@ -51,10 +64,10 @@ func fetchJSONData() ([]byte, error) {
 	return ioutil.ReadAll(resp.Body)
 }
 
-// processItem processes a single item and returns M3U content and group
-func processItem(item Item) (string, string, error) {
-	m3uContent := generateM3U(item.Group, item.Name, item.Logo, item.TvgID, item.URL)
-	return m3uContent, item.Group, nil
+// processItem processes a single item and returns M3U content, group, and htaccess URL
+func processItem(item Item) (string, string, string, error) {
+	m3uContent, htaccessURL := generateM3U(item.Group, item.Name, item.Logo, item.TvgID, item.URL)
+	return m3uContent, item.Group, htaccessURL, nil
 }
 
 func main() {
@@ -92,8 +105,10 @@ func main() {
 	groups := make(map[string]*os.File)
 	processedCount := 0
 
+	htaccessContent := ""
+
 	for _, item := range items {
-		m3uContent, group, err := processItem(item)
+		m3uContent, group, htaccessURL, err := processItem(item)
 		if err != nil {
 			fmt.Printf("Error processing item: %v\n", err)
 			continue
@@ -113,12 +128,24 @@ func main() {
 		indexM3U.WriteString(m3uContent + "\n")
 		groups[group].WriteString(m3uContent + "\n")
 
+		// Add to .htaccess content
+		if htaccessURL != "" {
+			htaccessContent += fmt.Sprintf("Redirect 301 /vavoo/%s.m3u8 %s\n", strings.Split(htaccessURL, "/vavoo/")[1], htaccessURL)
+		}
+
 		processedCount++
 		fmt.Printf("Processed %d/%d channels\n", processedCount, len(items))
 	}
 
 	for _, groupFile := range groups {
 		groupFile.Close()
+	}
+
+	// Write .htaccess file
+	err = ioutil.WriteFile(".htaccess", []byte(htaccessContent), 0644)
+	if err != nil {
+		fmt.Printf("Error writing .htaccess: %v\n", err)
+		return
 	}
 
 	// Generate HTML
@@ -150,5 +177,5 @@ func main() {
 		return
 	}
 
-	fmt.Println("M3U files and HTML index generated successfully.")
+	fmt.Println("M3U files, .htaccess, and HTML index generated successfully.")
 }
