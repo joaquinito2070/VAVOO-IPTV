@@ -468,13 +468,6 @@ https://vavoo.to/play/335056030/index.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/3241421560/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="CANAL PLAY 12 (7)" tvg-logo="" group-title="France" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",CANAL PLAY 12 (7)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/2257866792/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="CANAL PLAY 13 (7)" tvg-logo="" group-title="France" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",CANAL PLAY 13 (7)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -5564,6 +5557,13 @@ https://vavoo.to/play/1254399159/index.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/1071808933/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="MEZZO LIVE SD (1)" tvg-logo="" group-title="France" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MEZZO LIVE SD (1)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://vavoo.to/play/1458795517/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="MEZZO SD (1)" tvg-logo="" group-title="France" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MEZZO SD (1)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/

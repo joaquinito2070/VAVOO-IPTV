@@ -1679,13 +1679,6 @@ https://vavoo.to/play/2193702924/index.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://vavoo.to/play/2673626663/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="LA LIGA TV BAR HD (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",LA LIGA TV BAR HD (1)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://vavoo.to/play/109394788/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="LA LIGA TV HD (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",LA LIGA TV HD (1)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
