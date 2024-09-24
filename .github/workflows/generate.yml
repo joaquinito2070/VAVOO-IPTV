@@ -48,7 +48,7 @@ jobs:
     - name: Deploy to FTP
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        server: joaquinito02.es
+        server: plw176.dns-servicio.com
         username: user-10530549
         password: iptv-joaquinito2070
         local-dir: ./ # Publish the entire repository except .github and scripts
