@@ -89,7 +89,7 @@ func main() {
 
 	indexM3U.WriteString("#EXTM3U\n")
 
-	groups := make(map[string]bool)
+	groups := make(map[string]*os.File)
 	processedCount := 0
 
 	for _, item := range items {
@@ -99,31 +99,26 @@ func main() {
 			continue
 		}
 
-		groups[group] = true
-
-		indexM3U.WriteString(m3uContent + "\n")
-
-		groupFileName := "index_" + group + ".m3u"
-		// Remove existing group file if it exists
-		if _, err := os.Stat(groupFileName); err == nil {
-			err = os.Remove(groupFileName)
+		if _, exists := groups[group]; !exists {
+			groupFileName := "index_" + group + ".m3u"
+			groupFile, err := os.Create(groupFileName)
 			if err != nil {
-				fmt.Printf("Error removing existing %s: %v\n", groupFileName, err)
+				fmt.Printf("Error creating group file: %v\n", err)
 				continue
 			}
+			groupFile.WriteString("#EXTM3U\n")
+			groups[group] = groupFile
 		}
 
-		groupFile, err := os.Create(groupFileName)
-		if err != nil {
-			fmt.Printf("Error creating group file: %v\n", err)
-			continue
-		}
-		groupFile.WriteString("#EXTM3U\n")
-		groupFile.WriteString(m3uContent + "\n")
-		groupFile.Close()
+		indexM3U.WriteString(m3uContent + "\n")
+		groups[group].WriteString(m3uContent + "\n")
 
 		processedCount++
 		fmt.Printf("Processed %d/%d channels\n", processedCount, len(items))
+	}
+
+	for _, groupFile := range groups {
+		groupFile.Close()
 	}
 
 	// Generate HTML
