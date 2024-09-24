@@ -51,7 +51,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./ # Publish the entire repository except .github and scripts
-        server-dir: joaquinito02.es/vavoo
+        server-dir: /joaquinito02.es/vavoo
         exclude: |
           .github
           scripts
