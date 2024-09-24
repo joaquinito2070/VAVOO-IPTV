@@ -124,7 +124,8 @@ func main() {
 		groups[group].WriteString(m3uContent + "\n")
 
 		// Add to ids.txt content
-		id := strings.TrimPrefix(item.URL, "https://vavoo.to/play/")
+		id := strings.TrimPrefix(item.URL, "https://vavoo.to/live2/play/")
+		id = strings.TrimSuffix(id, ".ts")
 		idsContent += id + "\n"
 
 		processedCount++
