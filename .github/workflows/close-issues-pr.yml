@@ -11,12 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Close Pull Request
-      uses: peter-evans/close-pull-request@v2
-      with:
-        comment: "This repository is read-only and managed by a bot. Pull requests are not accepted."
-        repository: ${{ github.repository }}
-        pull-request-number: ${{ github.event.pull_request.number }}
-        token: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh pr close ${{ github.event.pull_request.number }} -c "This repository is read-only and managed by a bot. Pull requests are not accepted."
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   lock_pull_requests:
     runs-on: ubuntu-latest
@@ -33,12 +31,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Close Issue
-      uses: peter-evans/close-issue@v2
-      with:
-        comment: "This repository is read-only and managed by a bot. Issues are not accepted."
-        repository: ${{ github.repository }}
-        issue-number: ${{ github.event.issue.number }}
-        token: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh issue close ${{ github.event.issue.number }} -c "This repository is read-only and managed by a bot. Issues are not accepted."
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   lock_issues:
     runs-on: ubuntu-latest
@@ -50,3 +46,4 @@ jobs:
         lock-reason: 'resolved'
         token: ${{ secrets.GITHUB_TOKEN }}
         issue-number: ${{ github.event.issue.number }}
+
