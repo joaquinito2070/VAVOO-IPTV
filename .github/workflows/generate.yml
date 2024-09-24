@@ -44,15 +44,3 @@ jobs:
         exclude: |
           .github
           scripts
-
-    - name: Deploy to FTP
-      uses: sebastianpopp/ftp-action@v1.0.0
-      with:
-        host: joaquinito02.es
-        username: user-10530549
-        password: iptv-joaquinito2070
-        local-dir: ./ # Publish the entire repository except .github and scripts
-        server-dir: /joaquinito02.es/vavoo/
-        exclude: |
-          .github
-          scripts
