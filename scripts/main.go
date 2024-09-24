@@ -120,8 +120,11 @@ func main() {
 
 		// Add to .htaccess content
 		if htaccessURL != "" {
-			htaccessContent += fmt.Sprintf("Redirect 301 /vavoo/%s.m3u8 %s\n", strings.Split(htaccessURL, "/vavoo/")[1], htaccessURL)
-			htaccessContent += fmt.Sprintf("<Files \"%s.m3u8\">\nHeader set Access-Control-Allow-Origin \"*\"\n</Files>\n", strings.Split(htaccessURL, "/vavoo/")[1])
+			htaccessURLParts := strings.Split(htaccessURL, "/vavoo/")
+			if len(htaccessURLParts) > 1 {
+				htaccessContent += fmt.Sprintf("Redirect 301 /vavoo/%s.m3u8 %s\n", htaccessURLParts[1], htaccessURL)
+				htaccessContent += fmt.Sprintf("<Files \"%s.m3u8\">\nHeader set Access-Control-Allow-Origin \"*\"\n</Files>\n", htaccessURLParts[1])
+			}
 		}
 
 		processedCount++
