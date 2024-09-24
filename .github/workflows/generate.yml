@@ -31,6 +31,7 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add .
         git commit -m 'Automated update of files'
+        git pull --rebase origin main
         git push origin main
 
     - name: Deploy to gh-pages
