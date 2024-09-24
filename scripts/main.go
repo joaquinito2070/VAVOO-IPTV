@@ -129,7 +129,7 @@ func main() {
 
 		// Add to .htaccess content
 		if htaccessURL != "" {
-			htaccessContent += fmt.Sprintf("Redirect 301 /vavoo/%s %s\n", strings.Split(htaccessURL, "/vavoo/")[1], url)
+			htaccessContent += fmt.Sprintf("Redirect 301 /vavoo/%s %s\n", strings.Split(htaccessURL, "/vavoo/")[1], htaccessURL)
 			htaccessContent += fmt.Sprintf("<Files \"%s\">\nHeader set Access-Control-Allow-Origin \"*\"\n</Files>\n", strings.Split(htaccessURL, "/vavoo/")[1])
 		}
 
