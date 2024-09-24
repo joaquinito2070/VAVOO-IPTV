@@ -113,11 +113,12 @@ func main() {
 			}
 		}
 
-		groupFile, err := os.OpenFile(groupFileName, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+		groupFile, err := os.Create(groupFileName)
 		if err != nil {
-			fmt.Printf("Error opening group file: %v\n", err)
+			fmt.Printf("Error creating group file: %v\n", err)
 			continue
 		}
+		groupFile.WriteString("#EXTM3U\n")
 		groupFile.WriteString(m3uContent + "\n")
 		groupFile.Close()
 
