@@ -35,6 +35,10 @@ func generateM3U(group, name, logo, tvgID, url string) (string, string) {
 	// Ensure no double .m3u8.m3u8 in URLs
 	url = strings.Replace(url, ".m3u8.m3u8", ".m3u8", -1)
 
+	// Replace vavoo.to URL with joaquinito02.es URL
+	url = strings.Replace(url, "https://vavoo.to/play/", "https://joaquinito02.es/vavoo/", 1)
+	url = strings.Replace(url, "/index.m3u8", ".m3u8", 1)
+
 	return fmt.Sprintf("#EXTINF:-1 tvg-id=\"%s\" tvg-name=\"%s\" tvg-logo=\"%s\" group-title=\"%s\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://vavoo.to/\",%s\n"+
 		"#EXTVLCOPT:http-user-agent=VAVOO/1.0\n"+
 		"#EXTVLCOPT:http-referrer=https://vavoo.to/\n"+
@@ -120,7 +124,7 @@ func main() {
 		groups[group].WriteString(m3uContent + "\n")
 
 		// Add to ids.txt content
-		idsContent += item.TvgID + "\n"
+		idsContent += strings.TrimPrefix(item.URL, "https://vavoo.to/play/") + "\n"
 
 		processedCount++
 		fmt.Printf("Processed %d/%d channels\n", processedCount, len(items))
