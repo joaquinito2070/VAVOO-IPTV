@@ -32,17 +32,8 @@ func generateM3U(group, name, logo, tvgID, url string) (string, string) {
 		url = url + "/index.m3u8"
 	}
 
-	// Replace URL for .htaccess
-	htaccessURL := strings.Replace(url, "https://vavoo.to/play/", "https://joaquinito02.es/vavoo/", 1)
-	htaccessURL = strings.Replace(htaccessURL, "/index.m3u8", ".m3u8", 1)
-
 	// Ensure no double .m3u8.m3u8 in URLs
 	url = strings.Replace(url, ".m3u8.m3u8", ".m3u8", -1)
-	htaccessURL = strings.Replace(htaccessURL, ".m3u8.m3u8", ".m3u8", -1)
-
-	// Replace URL in M3U content
-	url = strings.Replace(url, "https://vavoo.to/play/", "https://joaquinito02.es/vavoo/", 1)
-	url = strings.Replace(url, "/index.m3u8", ".m3u8", 1)
 
 	return fmt.Sprintf("#EXTINF:-1 tvg-id=\"%s\" tvg-name=\"%s\" tvg-logo=\"%s\" group-title=\"%s\" http-user-agent=\"VAVOO/1.0\" http-referrer=\"https://vavoo.to/\",%s\n"+
 		"#EXTVLCOPT:http-user-agent=VAVOO/1.0\n"+
@@ -50,7 +41,7 @@ func generateM3U(group, name, logo, tvgID, url string) (string, string) {
 		"#KODIPROP:http-user-agent=VAVOO/1.0\n"+
 		"#KODIPROP:http-referrer=https://vavoo.to/\n"+
 		"#EXTHTTP:{\"User-Agent\":\"VAVOO/1.0\",\"Referer\":\"https://vavoo.to/\"}\n"+
-		"%s", tvgID, name, logo, group, name, url), htaccessURL
+		"%s", tvgID, name, logo, group, name, url), url
 }
 
 // fetchJSONData fetches JSON data from the specified URL
@@ -129,8 +120,8 @@ func main() {
 
 		// Add to .htaccess content
 		if htaccessURL != "" {
-			htaccessContent += fmt.Sprintf("Redirect 301 /vavoo/%s %s\n", strings.Split(htaccessURL, "/vavoo/")[1], htaccessURL)
-			htaccessContent += fmt.Sprintf("<Files \"%s\">\nHeader set Access-Control-Allow-Origin \"*\"\n</Files>\n", strings.Split(htaccessURL, "/vavoo/")[1])
+			htaccessContent += fmt.Sprintf("Redirect 301 /vavoo/%s.m3u8 %s\n", strings.Split(htaccessURL, "/vavoo/")[1], htaccessURL)
+			htaccessContent += fmt.Sprintf("<Files \"%s.m3u8\">\nHeader set Access-Control-Allow-Origin \"*\"\n</Files>\n", strings.Split(htaccessURL, "/vavoo/")[1])
 		}
 
 		processedCount++
