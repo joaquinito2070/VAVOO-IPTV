@@ -1,4 +1,11 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="101 TV (6)" tvg-logo="https://vavoo.to/live2/logo/3042734297.jpeg" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",101 TV (6)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/3042734297.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="13 TV (6)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",13 TV (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -69,13 +76,6 @@ https://joaquinito02.es/vavoo/3307268079.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/4125579950.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="ALCARRIA TV (6)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",ALCARRIA TV (6)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://joaquinito02.es/vavoo/4251716677.m3u8
 #EXTINF:-1 tvg-id="amc.es" tvg-name="AMC (6)" tvg-logo="https://vavoo.to/live2/logo/1462723502.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",AMC (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -139,6 +139,13 @@ https://joaquinito02.es/vavoo/2493319111.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/3312673778.m3u8
+#EXTINF:-1 tvg-id="babytv.es" tvg-name="BABY TV (6)" tvg-logo="https://vavoo.to/live2/logo/1448805961.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",BABY TV (6)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/1448805961.m3u8
 #EXTINF:-1 tvg-id="barcatv.es" tvg-name="BARCA TV (6)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",BARCA TV (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -181,6 +188,13 @@ https://joaquinito02.es/vavoo/605083986.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/3971769720.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="BOM CINE (6)" tvg-logo="https://vavoo.to/live2/logo/2566347328.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",BOM CINE (6)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/2566347328.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="BON DIA TV (6)" tvg-logo="https://vavoo.to/live2/logo/3334324116.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",BON DIA TV (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -349,6 +363,13 @@ https://joaquinito02.es/vavoo/2747600950.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/2703788385.m3u8
+#EXTINF:-1 tvg-id="comedycentral.es" tvg-name="COMEDY CENTRAL (6)" tvg-logo="https://vavoo.to/live2/logo/581715654.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",COMEDY CENTRAL (6)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/581715654.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="CONDAVISION (6)" tvg-logo="https://vavoo.to/live2/logo/3519716522.jpeg" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",CONDAVISION (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -454,6 +475,13 @@ https://joaquinito02.es/vavoo/3461295847.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/427708442.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="DECASA (6)" tvg-logo="https://vavoo.to/live2/logo/326701577.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",DECASA (6)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/326701577.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="DIEZ TV (6)" tvg-logo="https://vavoo.to/live2/logo/1205331668.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",DIEZ TV (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -517,13 +545,6 @@ https://joaquinito02.es/vavoo/1390269076.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/1054272251.m3u8
-#EXTINF:-1 tvg-id="energy.es" tvg-name="ENERGY (6)" tvg-logo="https://vavoo.to/live2/logo/643888368.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",ENERGY (6)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://joaquinito02.es/vavoo/643888368.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="ENFAMILIA (6)" tvg-logo="https://vavoo.to/live2/logo/2411568928.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",ENFAMILIA (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -783,6 +804,13 @@ https://joaquinito02.es/vavoo/44475216.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/3518404885.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="M+ LALIGA (6)" tvg-logo="https://vavoo.to/live2/logo/3996529465.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",M+ LALIGA (6)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/3996529465.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="M95 MARBELLA (6)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",M95 MARBELLA (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -797,13 +825,6 @@ https://joaquinito02.es/vavoo/3202539477.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/3767887105.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="MARBELLA TV (6)" tvg-logo="https://vavoo.to/live2/logo/3847314697.jpeg" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MARBELLA TV (6)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://joaquinito02.es/vavoo/3847314697.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="MARÍA+VISIÓN SEVILLA (6)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MARÍA+VISIÓN SEVILLA (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -860,6 +881,13 @@ https://joaquinito02.es/vavoo/1498547821.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/2881668464.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="MTV ESPANA (6)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MTV ESPANA (6)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/4068619843.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="MULTIDEPORTE (6)" tvg-logo="https://vavoo.to/live2/logo/242013171.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MULTIDEPORTE (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -874,6 +902,13 @@ https://joaquinito02.es/vavoo/242013171.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/3689902952.m3u8
+#EXTINF:-1 tvg-id="natgeowild.es" tvg-name="NAT GEO WILD (6)" tvg-logo="https://vavoo.to/live2/logo/289455435.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",NAT GEO WILD (6)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/289455435.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="NATURE TIME (6)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",NATURE TIME (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1035,6 +1070,13 @@ https://joaquinito02.es/vavoo/3881386219.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/2788570309.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="RTVE (6)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",RTVE (6)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/3177511590.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="RTVIDA (6)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",RTVIDA (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1049,13 +1091,6 @@ https://joaquinito02.es/vavoo/2601907871.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/3973811070.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="SOMOS (6)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",SOMOS (6)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://joaquinito02.es/vavoo/4252300734.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="SOPHIA TV ESPAÑOL (6)" tvg-logo="https://vavoo.to/live2/logo/3711717935.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",SOPHIA TV ESPAÑOL (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1217,13 +1252,6 @@ https://joaquinito02.es/vavoo/1529983433.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/3969343348.m3u8
-#EXTINF:-1 tvg-id="la1.es" tvg-name="TVE LA 1 MADRID (6)" tvg-logo="https://vavoo.to/live2/logo/2021291682.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",TVE LA 1 MADRID (6)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://joaquinito02.es/vavoo/2021291682.m3u8
 #EXTINF:-1 tvg-id="la2.es" tvg-name="TVE LA 2 (6)" tvg-logo="https://vavoo.to/live2/logo/779986648.png" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",TVE LA 2 (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1630,6 +1658,13 @@ https://joaquinito02.es/vavoo/2193702924.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/2673626663.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="LA LIGA TV BAR HD (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",LA LIGA TV BAR HD (1)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/109394788.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="LA LIGA TV HD (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",LA LIGA TV HD (1)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1819,20 +1854,6 @@ https://joaquinito02.es/vavoo/851881305.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/262571241.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="MOVISTAR LIGA DE CAMPEONES (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MOVISTAR LIGA DE CAMPEONES (1)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://joaquinito02.es/vavoo/1275784434.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="MOVISTAR LIGA DE CAMPEONES 1 HD (ONLY EVENT) (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MOVISTAR LIGA DE CAMPEONES 1 HD (ONLY EVENT) (1)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://joaquinito02.es/vavoo/1079960250.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="MOVISTAR LIGA DE CAMPEONES 2 HD (ONLY EVENT) (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MOVISTAR LIGA DE CAMPEONES 2 HD (ONLY EVENT) (1)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1840,13 +1861,6 @@ https://joaquinito02.es/vavoo/1079960250.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/994074713.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="MOVISTAR LIGA DE CAMPEONES 3 HD (ONLY EVENT) (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MOVISTAR LIGA DE CAMPEONES 3 HD (ONLY EVENT) (1)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://joaquinito02.es/vavoo/2761614279.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="MOVISTAR LIGA DE CAMPEONES 4 HD (ONLY EVENT) (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",MOVISTAR LIGA DE CAMPEONES 4 HD (ONLY EVENT) (1)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1994,6 +2008,13 @@ https://joaquinito02.es/vavoo/2537320036.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/4259288064.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="TOROS TV (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",TOROS TV (1)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/469813358.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TOROS TV HD (1)" tvg-logo="" group-title="Spain" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",TOROS TV HD (1)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
