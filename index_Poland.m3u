@@ -69,6 +69,13 @@ https://joaquinito02.es/vavoo/2384808701.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/157522257.m3u8
+#EXTINF:-1 tvg-id="axnblack.pl" tvg-name="AXN BLACK (6)" tvg-logo="" group-title="Poland" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",AXN BLACK (6)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/1005418743.m3u8
 #EXTINF:-1 tvg-id="axn.pl" tvg-name="AXN SPIN (6)" tvg-logo="https://vavoo.to/live2/logo/870571372.png" group-title="Poland" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",AXN SPIN (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -811,13 +818,6 @@ https://joaquinito02.es/vavoo/2249727134.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/1664723595.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="POLSAT SPORT 2 (6)" tvg-logo="" group-title="Poland" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",POLSAT SPORT 2 (6)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://joaquinito02.es/vavoo/987995902.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="POLSAT SPORT 3 (6)" tvg-logo="" group-title="Poland" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",POLSAT SPORT 3 (6)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -1490,13 +1490,6 @@ https://joaquinito02.es/vavoo/3412671176.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/1926452306.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="CANAL HD (1)" tvg-logo="" group-title="Poland" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",CANAL HD (1)
-#EXTVLCOPT:http-user-agent=VAVOO/1.0
-#EXTVLCOPT:http-referrer=https://vavoo.to/
-#KODIPROP:http-user-agent=VAVOO/1.0
-#KODIPROP:http-referrer=https://vavoo.to/
-#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
-https://joaquinito02.es/vavoo/867185230.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="CANAL NOW (1)" tvg-logo="" group-title="Poland" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",CANAL NOW (1)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
@@ -2526,6 +2519,13 @@ https://joaquinito02.es/vavoo/534760666.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/1291874011.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="STUDIOMED TV HD (1)" tvg-logo="" group-title="Poland" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",STUDIOMED TV HD (1)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/1601605182.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="SUNDANCE HD (1)" tvg-logo="" group-title="Poland" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",SUNDANCE HD (1)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
