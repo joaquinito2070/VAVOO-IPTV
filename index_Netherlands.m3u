@@ -209,6 +209,13 @@ https://joaquinito02.es/vavoo/74097556.m3u8
 #KODIPROP:http-referrer=https://vavoo.to/
 #EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
 https://joaquinito02.es/vavoo/1137367364.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="EX SPORT (7)" tvg-logo="" group-title="Netherlands" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",EX SPORT (7)
+#EXTVLCOPT:http-user-agent=VAVOO/1.0
+#EXTVLCOPT:http-referrer=https://vavoo.to/
+#KODIPROP:http-user-agent=VAVOO/1.0
+#KODIPROP:http-referrer=https://vavoo.to/
+#EXTHTTP:{"User-Agent":"VAVOO/1.0","Referer":"https://vavoo.to/"}
+https://joaquinito02.es/vavoo/330363772.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="FAMILY 7 (7)" tvg-logo="" group-title="Netherlands" http-user-agent="VAVOO/1.0" http-referrer="https://vavoo.to/",FAMILY 7 (7)
 #EXTVLCOPT:http-user-agent=VAVOO/1.0
 #EXTVLCOPT:http-referrer=https://vavoo.to/
