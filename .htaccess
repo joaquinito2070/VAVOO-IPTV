@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Exclude aesthetic files from redirection
+    RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|m3u|html|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ [NC]
+
+    # Redirect all other requests to redirect.php
+    RewriteRule ^(.*)$ redirect.php [L,QSA]
+</IfModule>
